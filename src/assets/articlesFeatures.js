@@ -171,10 +171,10 @@ export const articlesFeatures = [
 
   {
     articleId: 'ieeefellows',
-    professorTitle: 'Four ECE',
+    professorTitle: 'Professors',
     professorFirstName: '',
     professorLastName: '',
-    professorName: ' Faculty Members',
+    professorName: ' Jarrahi, Grundfest, Wang, Wong',
     articleAbrevTitle:'Elected to IEEE',
     articleDescription: 'Four ECE Faculty members elected to IEEE',
     articleHeadline:'IEEE Elects four new members from ECE Department',
@@ -202,7 +202,7 @@ export const articlesFeatures = [
     articleCaption1: 'Professors Mona Jarrahi and Y. Ethan Wang',
     articleCaption2: 'Professors Warren Grundfest (1940-2019) and Chee Wei Wong',
     articleCaption3: '',
-    textCopy: 'In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played gowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak. /r  In 1950, Ben Hogan played golf with Mike Austin at Riviera Country Club. Mr. Austin was known primarily as a famous long baller, having hit a 515-yard drive in a regular PGA tour event, which stands as a Guinness Book world record even today. Austin was also known as an instructor of some repute. His knowledge of the mechanics of the golf swing and kinesiology in particular is famous and quite astounding. He could speak.'
+    textCopy: 'Four faculty members of the Electrical and Computer Enginnerign department have been elected this year to the pretigious IEEE. Mona Jarrahi, Y. Etahn Wang, CHei Wei Wong and Warren Grundfest (in memoriam) receveid the highest honor in the electrical engineer carrer. We included a descriptions by the professors on the Faculty Highlights section. '
 
   },
 
