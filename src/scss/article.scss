@@ -11,17 +11,18 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  // flex-wrap: wrap;
-  // flex: 0 0 100%;
   background:$grey-dark;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 1em;
   margin-bottom: 2em;
   justify-content: flex-start;
+  // flex: 0 0 100%;
   // text-align: left;
-  // background-color:$grey-dark;
 
+  .article-content{
+    max-width: 1200px;
+  }
 }
 
 .prof-frame{
