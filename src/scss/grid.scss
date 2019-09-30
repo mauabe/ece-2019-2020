@@ -112,7 +112,7 @@
     margin-bottom: 1.5em;
   }
 
-  .cpu img {
+  img.cpu {
     width: 100%;
     max-height: 200px;
     float: left;
@@ -129,6 +129,7 @@
     grid-gap: 2em;
     padding: 0;
     text-indent: 0;
+    margin-top: -2em;
 
     .fac img{
       max-width: 210px;
@@ -137,6 +138,9 @@
       object-position: 50% 50%;
 
     }
+  }
+  .page-caption.faculty-caption{
+    margin-bottom: 2em;
   }
 
 }
