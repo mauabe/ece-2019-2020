@@ -109,65 +109,42 @@
 
 
 
-  card-wrapper{
-    display: grid;
+  .card-deck.dept.credits{
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
     grid-template-areas:
-      'editors design'
+      'editors designer'
       'writers writers';
-
-    .card-dept-design {
-      grid-area: design;
-      grid-template-columns: 1fr;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-      transition: 0.3s;
-      border-radius: 4px;
-      background: $beige-lighter;
-      align-items: start;
-      padding: 1em;
-      border-radius: 4px;
-      align-items: start;
-      min-width: 270px;
-      min-height:300px;
-    }
-    .card-dept-56{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    .card-dept-editors {
-      grid-area: editors;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-      transition: 0.3s;
-      border-radius: 4px;
-      background: $beige-lighter;
-      align-items: start;
-      padding: 1em;
-      // min-width: 270px;
-      // min-height:520px;
-    }
-
-    .card-dept-writers{
-      grid-area: editors;
-      grid-template-columns: 1fr;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-      transition: 0.3s;
-      border-radius: 4px;
-      background: $beige-lighter;
-      align-items: start;
-      padding: 1em;
-      // min-width: 270px;
-      // min-height:520px;
-    }
-    .card-dept-editors:hover,
-    .card-dept-designer:hover,
-    .card-dept-writers:hover        {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    }
-
-
+  }
+  .card-dept.editors{
+    grid-column: 1;
+    min-height:300px;
+  }
+  .card-dept.designer {
+    grid-column: 2;
+    min-height:300px;
+  }
+  .card-dept.writers{
+    grid-column: 1 / span 2;
+    grid-area: writers;
+    min-height:300px;
+    width: 100%;
+  }
+  .twocol{
+    padding: 1em;
+    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+    -moz-column-count: 2; /* Old Firefox */
+    column-count: 2;
   }
 
+
+    // .card-dept.editors:hover,
+    // .card-dept.designer:hover,
+    // .card-dept.writers:hover {
+    //   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    // }
+  // }
 
   // .card-partner{
   //   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
@@ -260,7 +237,7 @@
     color: $black-70;
     text-align: center;
   }
-  .acad-name{
+  .acad-name.dept{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
