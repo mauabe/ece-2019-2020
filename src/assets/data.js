@@ -25,7 +25,7 @@ export const slides = [
     title: "Covid-19 Pandemic Stops Everything",
     subtitle: "Professor helps students from home",
     description: "The internet is helping education",
-    image:  "/img/covid-coronavirus2.jpg",
+    image: "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
     link: "/2019-2020/feature1"
   },
   {
