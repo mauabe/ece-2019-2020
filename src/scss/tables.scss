@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 350px;
+  background-color: white;
+  vertical-align: center;
+  // text-align: left;
+}
+
+thead {
+  // align-items: center;
+  // text-align: left;
+}
+tr th {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-indent: 0;
+  padding: 1.5em;
+  background-color: $menublue--70;
+  color:$white;
+
+}
+td {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: $black-70;
+  align-self: center;
+  padding: 0.7em;
+  padding-left: 1.5em;
+  border-bottom: 1px solid $black-40;
+}
+tfoot tr{
+  align-items: center;
+  background-color:$menublue--50;
+  height: 1em;
+}
+
+tbody tr:hover {
+  background-color: $cardbottom ;
+}
+// tr:nth-child(even) {
+//   background-color: $black-20;
+// }
+
+tr.t-total{
+  background-color: $Gainsboro;
+  &:hover{
+    background-color: lighten($Gainsboro, 10) ;
+  }
+}
+tr.sub-head{
+  background-color: $LightSteelBlue;
+
+  &:hover{
+    background-color: darken($LightSteelBlue, 10) ;
+  }
+}
+tr.sub-total{
+  background-color: darken($Gainsboro, 8);
+
+  &:hover{
+    background-color: lighten($Gainsboro, 5) ;
+  }
+}
+.card-deck.overview{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+  grid-template-rows: auto ;
+  grid-gap: 2em;
+  text-indent: 0;
+  justify-items: center;
+  align-items: start;
+}
+
+.card-overview {
+
+  overflow-y: auto; //responsive
+  // overflow-x: auto; //responsive
+  background-color: none;
+  border-radius: 5px;
+  align-items: start;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: all 0.3s;
+  // padding: 1em;
+  min-width: 300px;
+  height: auto;
+  width: 100%;
+}
+// .card-overview tr{
+//     padding-top: O.3em;
+//   }
+
+.spacer{
+  margin: 1em 0;
+}

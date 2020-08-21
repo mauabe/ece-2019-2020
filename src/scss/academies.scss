@@ -1,0 +1,387 @@
+@charset "utf-8";
+@import "./variables.scss";
+
+.grid-academies{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  // padding: 1em;
+
+  h3.page-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: $black-20;
+    text-indent: 0;
+    margin-bottom: 1em;
+  }
+  img.cpu {
+    width: 100%;
+    max-height: 200px;
+    float: left;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+  }
+  .card-deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
+    grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+    justify-items: start;
+  }
+  .card-deck.partner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-deck.dept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    // grid-template-rows: auto ;
+    grid-gap: 1.5em;
+    text-indent: 0;
+    // justify-items: start;
+    // align-items: center;
+  }
+
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    min-width: 270px;
+    min-height: 300px;
+    border-radius: 4px;
+    background: $cardtop;
+    align-items: start;
+    padding: 1em;
+  }
+  .card-alumni {
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    min-width: 270px;
+    min-height: 300px;
+    border-radius: 4px;
+    background: $cardbottom;
+    align-items: start;
+    padding: 1em;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .card-partner {
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    min-width: 300px;
+    min-height: 180px;
+    border-radius: 4px;
+    background: $greylight;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+  }
+
+  .card-dept{
+    display: grid;
+    // grid-template-columns: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    background: $beige-lighter;
+    align-items: start;
+    padding: 1em;
+    min-width: 270px;
+    min-height:550px;
+    // height: 100%;
+    width: 100%;
+  }
+
+  .card-deck.dept.credits{
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas:
+      'editors designer'
+      'writers writers';
+  }
+  .card-dept.editors{
+    grid-column: 1;
+    min-height:300px;
+    width: 100%;
+  }
+  .card-dept.designer {
+    grid-column: 2;
+    min-height:300px;
+    width: 100%;
+  }
+  .card-dept.writers{
+    grid-area: writers;
+    width: 100%;
+    grid-column: 1 / span 2;
+    // min-height:300px;
+  }
+  .twocolumns{
+    padding: 2em;
+    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+    -moz-column-count: 2; /* Old Firefox */
+    column-count: 2;
+  }
+
+  .card-partner.ibm{
+    display: grid;
+    height: 300px;
+    width: 350px;
+    align-items: start;
+    justify-self: center;
+    text-indent: 0;
+    background: $cardtop;
+
+  }
+  .frame-ibm{
+    border: 2px solid $black-60;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 70%;
+    background-color: white;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  img.card-pic-ibm{
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+
+  .acad-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.2em;
+  }
+
+  .card:hover,
+  .card-alumni:hover,
+  .card-partner:hover,
+  .card-dept:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+     background: $cardbottom2;
+    .frame{
+      border: 2p solid $menublue;
+    }
+    .acad-prof2{
+      color:$menublue;
+    }
+    .acad-name{
+      color:$menublue;
+    }
+  }
+
+
+
+  .frame{
+    border: 2px solid $black-60;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
+    height: 0;
+    padding-bottom: 49%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 1em;
+    object-fit: contain;
+    object-position: 50% 50%;
+    transition: all 0.3s ease;
+    font-size: 0;
+  }
+  .frame-logo{
+    border: 0;
+    margin:1%;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+
+  img.card-pic{
+    object-fit: contain;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+
+  img.card-pic.aab-chair {
+    object-fit: cover;
+    display: block;
+  }
+
+  .acad-prof1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1em;
+    color: $menublue;
+    text-align: center;
+  }
+  .acad-prof2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: $black-70;
+    text-align: center;
+  }
+  .acad-name.dept{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+  .acad-name.credits{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+  .acad-name-writers{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: $black-70;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+
+  li{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300  ;
+    text-align: left;
+    font-size: 1em;
+    color: $black-95;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .card-deck.dept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: start;
+    padding: 1em;
+  }
+  .card-partner{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    background: $borderblue2;
+    min-width: 300px;
+    // min-height: 300px;
+    height: auto;
+  }
+  .card-partner:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  }
+  .acad-section{
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+    color: $menublue;
+    text-align: center;
+  }
+  span.acad-prof1-cred2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    color: $menublue;
+    text-align: start;
+  }
+  span.acad-prof1-cred3 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-size: 1.1m;
+    color: $black_80;
+    // text-align: start;
+    margin-bottom: 0.4em;
+  }
+  .acad-prof1.dept{
+    font-size: 2em;
+    margin: 0.5em;
+    padding-bottom: 0.8em;
+  }
+  .card-pic.book{
+    border-radius: 0;
+    object-fit: contain;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+  .frame-book{
+    border: 2px solid $black-60;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    max-width: 40%;
+    height: 0;
+    padding-bottom: 49%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 1em;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+  .card-alumni.book{
+      transition: all 0.3s ease;
+  }
+  .frame-prof-book{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    border: 2px solid $menublue;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    z-index: 100;
+    top: 35px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-alumni.book:hover{
+    position: relative;
+    // transition: all 0.3s ease;
+    .frame-book{
+      border: 2px solid $menublue;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    }
+    .frame-prof-book{
+      position: absolute;
+      display: block;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+
+
+  p > span {
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 1000px) {
+    .frame {
+      max-height: auto;
+    }
+  }
+}
