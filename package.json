@@ -1,18 +1,16 @@
 {
-  "name": "ece-2018-2019",
+  "name": "ece20",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ucla-ece-report.com/2018-2019",
+  "homepage": "http://ucla-ece-report.com/2019-2020",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/scss/styles.scss src/scss/styles.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "react-scripts start css-watch",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject???": "react-scripts eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "XXXXreact-app"
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -27,28 +25,26 @@
     ]
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
-    "handlebars": "^4.7.2",
-    "primeicons": "^2.0.0",
-    "primereact": "^3.2.0",
-    "rc-banner-anim": "^2.4.2",
-    "react": "^16.9.0",
+    "lodash.zip": "^4.2.0",
+    "primeicons": "^4.0.0",
+    "primereact": "^4.2.2",
+    "react": "^16.13.1",
     "react-absolute-grid": "^3.0.1",
-    "react-dom": "^16.9.0",
+    "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",
-    "react-router-dom": "^5.0.1",
-    "react-sanfona": "^1.4.0",
-    "react-scripts": "^3.3.0",
-    "react-transition-group": "^4.3.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
-    "babel-plugin-root-import": "^6.4.1",
-    "lodash.zip": "^4.2.0",
-    "node-sass": "^4.13.0",
+    "babel-plugin-root-import": "^6.5.0",
+    "node-sass": "^4.14.1",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
-    "react-app-rewired": "^2.1.3",
-    "react-snapshot": "^1.3.0",
     "sass-loader": "^7.3.1"
   }
 }

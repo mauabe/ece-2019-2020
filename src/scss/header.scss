@@ -3,18 +3,21 @@
 
 .header {
   display: flex;
+  top: -200px;
   // background-color: $brown;
   flex-direction: row;
-  justify-content: flex-start;
-  height: 3.3rem;
+  justify-content: center;
+  height: 3.5rem;
   flex: 0 1 100%;
-  align-items: flex-start;
+  align-items: center;
   align-content: space-between;
+  z-index: auto;
 
   .logos{
     margin-left: 3rem;
     margin-right: 3rem;
     flex: none;
+    top: -10px;
 
     .logo-image{
       width: 80px;

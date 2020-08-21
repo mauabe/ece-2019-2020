@@ -1,5 +1,5 @@
 {
-  "short_name": "ece-2018-2019",
+  "short_name": "ece-2019-2020",
   "name": "UCLA Electrical and Computer Engineering",
   "icons": [
     {
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "http://ucla-ece-report/2018/2019",
+  "start_url": "http://ucla-ece-report/2019-2020",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

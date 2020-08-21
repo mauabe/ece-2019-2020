@@ -1,24 +1,4 @@
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(359deg); } }
-
-.is-unselectable, .button {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.is-overlay {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+/* ! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css
 html,
 body,
 p,
@@ -739,33 +719,6 @@ table th {
   font-weight: 500;
   text-decoration: none; }
 
-.App {
-  text-align: center; }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none; }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white; }
-
-.App-link {
-  color: #61dafb;
-  background-color: #BADA55; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 
 body {
   margin: 0;
@@ -773,49 +726,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-.section-menu {
-  margin-left: 0px; }
-  .section-menu .menu-box-large {
-    position: absolute;
-    width: 163px;
-    height: 162px;
-    color: white;
-    background-color: #113c6f;
-    border: 1px solid #c8e9D9;
-    border-radius: 0 0 15px 3px;
-    width: 165px;
-    height: 165px;
-    background-position-y: -120px;
-    margin-bottom: 7px;
-    transition: translateY(120px); }
-    .section-menu .menu-box-large {
-      position: relative;
-      width: 110px;
-      height: 110px;
-      color: white;
-      border: 3px solid #f99e39;
-      border-radius: 50%;
-      margin-top: 15px;
-      margin-left: auto;
-      margin-right: auto; }
-      .section-menu .menu-box-large {
-        position: relative;
-        width: 70px;
-        height: 70px;
-        margin: auto; }
-  .section-menu {
-    position: absolute;
-    display: flex;
-    width: 175px;
-    height: 30px;
-    border-radius: 2px 2px 9px 2px;
-    background-color: #4976AB;
-    border: 1px solid #c8e9D9;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    align-items: center;
-    padding-left: 5px;
-    transition: border(1px solid #f99e39); }
+  */

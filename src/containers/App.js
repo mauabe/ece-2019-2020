@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import '../scss/styles.scss';
-// import history from '../history';
 
 import Header from './Header';
 import Home from './Home';
@@ -42,7 +41,7 @@ class App extends Component {
               <Route path='/faculty' component={Faculty}/>
               <Route path='/overview' component={Overview}/>
               <Route path='/alumni' component={Alumni}/>
-              <Route path='/features' render={() => <Redirect to="/features/pottie" />} />,
+              <Route path='/features' render={() => <Redirect to="/features/chair" />} />,
               <Route path='/highlights' render={() => <Redirect to="/highlights/wong" />} />,
               <Route path='/students' render={() => <Redirect to="/students/awardsundergrad"  />}/>,
               <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
@@ -50,7 +49,6 @@ class App extends Component {
               <Route path='/alumni' render={() => <Redirect to="/alumni/alumnae"  />}/>,
             </Switch>
           <Footer/>
-        {/* </Router> */}
       </div>
     );
   }

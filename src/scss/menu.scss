@@ -17,7 +17,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    u {
+    ul {
       padding: 0;
       flex: 0 0 100%;
 
@@ -43,15 +43,15 @@
       font-family: Oswald;
       font-size: .9em;
       width: 145px;
-      height: 32px;
-      background-color: $menublue;;
-      border: 2px solid $borderblue;
-      border-radius: 0 0 10px 3px;
+      height: 44px;
+      // background-color: $menublue;;
+      // border: 2px solid $borderblue;
+      // border-radius: 0 0 10px 3px;
       margin-right: 7px;
       margin-bottom: 7px;
       cursor: pointer;
-      -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
-      filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
+      // -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
+      // filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
 
     }
     .menu-box-large:hover,
@@ -62,13 +62,7 @@
       -webkit-filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
       filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
     }
-    // .menu-box-large.active{
-    //   color: $black-20;
-    //   transform: all .5s ease-in-out;
-    //   border-color: $orange;
-    //   -webkit-filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
-    //   filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
-    // }
+
   }
   // .submenu-container{
   //   margin-top: 52px;

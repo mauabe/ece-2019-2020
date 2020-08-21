@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import Carousel from './Carousel'
 
-// import * as data from '../assets/data'
-import eceblue from '../assets/images/ECE_logo_blue.svg';
-import ecewhite from '../assets/images/ECE_logo_white.svg';
+// import eceblue from '../assets/images/ECE_logo_blue.svg';
+// import ecewhite from '../assets/images/ECE_logo_white.svg';
 
 class Home extends Component{
   constructor(props) {
@@ -16,24 +16,21 @@ class Home extends Component{
 		// console.log('%c STATE at HOME constructor ', 'color:black;background:skyblue;padding:6px;border:2px  black', this.state);
   }
 
-  renderPlaceholder = () => {
-    return (<div>
-      <div className="placeholder" >
-        <h3><Link to="/features/pottie" > Electrical and Computer Engineering </Link></h3>
-      </div>
-    </div>);
+  // renderPlaceholder = () => {
+  //   return (<div>
+  //     <div className="placeholder" >
+  //       <h3><Link to="/features/chair" > Electrical and Computer Engineering </Link></h3>
+  //     </div>
+  //   </div>);
   // {this.renderPlaceholder()}
-  }
+  // }
 
   render() {
     return (
       <div className="home-container">
-        <Link to="/features/pottie" >
-        <div className="logo-container">
-          <img className="frontpagelogoblue" src={eceblue} alt="ECE logo blue"/>
-          <img className="frontpagelogowhite" src={ecewhite} alt="ECE Logo white"/>
-        </div>
-        </Link>
+        {/* <Link to="/features/chair" > */}
+            <Carousel />
+        {/* </Link> */}
       </div>
     );
   }
