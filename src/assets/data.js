@@ -33,43 +33,43 @@ export const slides = [
     subtitle: "Covid-19 Pandemic Changes Everything",
     description: "The internet is helping education. If we haven't invented it, I would like to see kids taking classes on Zoom, online grocery shopping and binge-watching your favorite show on Netflix. Yeay for us!",
     image: "/img/covid-virus.jpg",
-    link: "/2019-2020/feature1"
+    link: "feature1"
   },
   {
     title: "Prof. Jarrahi and Dr. Yardimci receive the",
     subtitle: "Innovation in Regulatory Science Award",
     description: "The Burroughs Wellcome Fund recognize UCLA ECE faculty for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.",
-    image:  "/img/covid-hands.jpg",
-    link: "/2019-2020/feature2"
+    image: "/img/controller.jpg",
+    link: "feature2"
   },
   {
     title: "Professor Warren Mori receives",
     subtitle: "James Maxwell Award",
     description: "He is the third faculty member honored with the prestigious award. The two prior winners are Professors Chand Joshi and Francis Chen.",
-    image: "/img/covid-mask.jpg",
-    link: "/2019-2020/feature3"
+    image: "/img/head.jpg",
+    link: "feature3"
   },
   {
     title: "Dean Jayathi Murthy inducted into ",
     subtitle: "National Academy of Engineering",
     description: "The prestigious nomination comes from her hard work and dedication to important causes, such as brushing her teeth every morning and avoiding sugary drinks.",
     image: "/img/covid-hacker.jpg",
-    link: "/2019-2020/feature4"
+    link: "feature4"
   },
   {
     title: "Professor Willliam Keiser  was elected to the Class of 2020",
     subtitle: "AIMBE College of Fellows",
-    description: "'What virus?', they say",
+    description: '"What virus?", they say',
     image:"/img/covid-lab.jpg",
-      link: "/2019-2020/feature5"
+    link: "feature5"
   },
   {
-    title: "Alumni Reza Rofougaran was elected to the Class of 2020 of the",
+    title: "Alumni Reza Rofougaran was elected to the",
     subtitle: "National Academy of Engineering",
-    description: "'Reza Rofougaran graduated from UCLA (1986, M.S. 1988, Ph.D. 1998), studying under Professor Asad Abidi, and is an active member of the Alumni Social Club",
-    image:"/img/covid-un-covid.jpg",
+    description: "'Reza Rofougaran graduated from UCLA (1986, M.S. 1988, Ph.D. 1998), studying under Professor Asad Abidi, and is an active member of the Alumni Social Club.",
+    image:"/img/covid-coronavirus.jpg",
     // image: "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
-    link: "/2019-2020/feature6"
+    link: "feature6"
   }
 ];
 

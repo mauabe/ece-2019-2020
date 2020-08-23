@@ -5,23 +5,23 @@ import {Link} from 'react-router-dom';
 // import uclaece from '../assets/images/ECE.svg';
 
 class Logos extends Component {
-  // constructor(props) {
-	// 	super(props);
-	//   this.state = {}
-  //   // console.log('%c PROPS at LOGOS constructor', 'color:black;background:#orange;padding:6px;border:4px dashed yellow', this.props )
-  //   //LOGOS should receive {logoPick} as PROPS
-	// }
+  constructor(props) {
+		super(props);
+	  this.state = {}
+    console.log('%c PROPS at LOGOS constructor', 'color:black;background:#orange;padding:6px;border:4px dashed yellow', this.props )
+  //   //LOGOS should receive {logoPick, pageView} as PROPS
+	}
 
   render(){
     const {logoPick} = this.props;
 
     return (
       <div className="logos">
-        <Link to={'/'} className={`logos-${this.props.pageView}`}>
+        <Link to={'/'}>
           <img
             className="logo-image"
             src={logoPick}
-            alt={`${logoPick} logo`}
+            alt="UCLA ECE logo"
             title="UCLA Electrical and Computer Engineering 2019-2020"
           />
         </Link>

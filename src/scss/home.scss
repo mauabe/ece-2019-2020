@@ -31,22 +31,26 @@
 // }
 
 
-.home-container {
-  // width: 100%;
-  height: 100%;
-  transition: opacity .8s ease-out 0.5s;
-  // justify-content: center;
-  // padding-top: 20rem;
-  // padding-bottom: 10rem;
-  // font-size: 3vmin;
-  // transition: opacity 0.7s ease-in-out 0.3s;
-  transition-delay: 0.5s;
-}
+// .home-container {
+//   // width: 100%;
+//   height: 100%;
+//   transition: opacity .8s ease-out 0.5s;
+//   // justify-content: center;
+//   // padding-top: 20rem;
+//   // padding-bottom: 10rem;
+//   // font-size: 3vmin;
+//   // transition: opacity 0.7s ease-in-out 0.3s;
+//   transition-delay: 0.5s;
+// }
 
-.slides {
+.slidesContainer {
+  width: 100%;
+  height: 75%;
   display: grid;
+  transition-delay: 0.5s;
+
   > .slide {
-    grid-area: 1 / -1;
+    grid-area: 1 / -1 / auto / auto;
   }
 
   > button {
@@ -81,7 +85,7 @@
   }
 }
 
-.slide {
+// .slide {
   //transform-style: preserve-3d;
   // border: solid 1px red;
 
@@ -92,7 +96,7 @@
   //   }
   // }
 
-}
+// }
 
 .slideContent {
   width: 35vw;
@@ -115,7 +119,7 @@
   transform-style: preserve-3d;
   transform: translateZ(2rem);
   transition: opacity 0.3s linear;
-  text-shadow: 0.1rem 0.2rem 1.8rem #000;
+  text-shadow: 0.1rem 0.2rem 1.4rem #000;
   opacity: 0;
 
   .slideSubtitle,
@@ -125,8 +129,8 @@
     font-weight: normal;
     letter-spacing: 0.2ch;
     text-transform: uppercase;
-    margin: 1rem;;
-    opacity: 0.9;
+    margin-left: 1rem;;
+    // opacity: 0.9;
     background: transparent;
   }
 
@@ -142,7 +146,7 @@
 
   .slideDescription {
     margin: 1rem;
-    margin: 20;
+    // margin: 20;
     color: white;
     opacity: 1;
     font-size: 1rem;
@@ -185,13 +189,13 @@
     opacity: 1;
     color: white;
 
-    transform: perspective(1000px);
+    transform: perspective(800px);
 
     &:hover {
       transition: transform 0.1s ease-in-out;
       transform: perspective(1000px)
-        rotateX(calc(var(--y) * -1deg))
-        rotateY(calc(var(--x) * 20deg));
+        rotateX(calc(var(--y) * -5deg))
+        rotateY(calc(var(--x) * 30deg));
     }
   }
 }
