@@ -1,9 +1,9 @@
 import React from 'react';
-// import slides from  '../assets/data';
+import { Link } from "react-router-dom";
 import * as data from '../assets/data'
 // import {withRouter} from 'react-router-dom';
 
-// console.clear();
+console.clear();
 
 function useTilt(active) {
   const ref = React.useRef(null);
@@ -87,6 +87,7 @@ function Slide({ slide, offset }) {
           backgroundImage: `url('${slide.image}')`
         }}
       />
+      {/* <Link to="/features/chair" > */}
       <div
         className="slideContent"
         style={{
@@ -99,6 +100,7 @@ function Slide({ slide, offset }) {
           <p className="slideDescription">{slide.description}</p>
         </div>
       </div>
+      {/* </Link > */}
     </div>
   );
 }
@@ -113,11 +115,14 @@ function Carousel() {
       {[...data.slides, ...data.slides, ...data.slides].map((slide, i) => {
         let offset = data.slides.length + (state.slideIndex - i);
         return (
-          <Slide
-            slide={slide}
-            offset={offset}
-            key={i}
-          />);
+          <Link to="/features/chair" >
+            <Slide
+              slide={slide}
+              offset={offset}
+              key={i}
+            />
+          </Link>
+        );
       })}
       <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
     </div>

@@ -30,25 +30,23 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        {/* <Router history = {history}> */}
-        {/* <BrowserRouter basename="/2019-2020" /> */}
-          <Header/>
-            <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route path='/features' component={Features}/>
-              <Route path='/highlights' component={Highlights}/>
-              <Route path='/students' component={Students}/>
-              <Route path='/faculty' component={Faculty}/>
-              <Route path='/overview' component={Overview}/>
-              <Route path='/alumni' component={Alumni}/>
-              <Route path='/features' render={() => <Redirect to="/features/chair" />} />,
-              <Route path='/highlights' render={() => <Redirect to="/highlights/wong" />} />,
-              <Route path='/students' render={() => <Redirect to="/students/awardsundergrad"  />}/>,
-              <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
-              <Route path='/overview' render={() => <Redirect to="/overview/researchcenters" />}/>,
-              <Route path='/alumni' render={() => <Redirect to="/alumni/alumnae"  />}/>,
-            </Switch>
-          <Footer/>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/features' component={Features}/>
+          <Route path='/highlights' component={Highlights}/>
+          <Route path='/students' component={Students}/>
+          <Route path='/faculty' component={Faculty}/>
+          <Route path='/overview' component={Overview}/>
+          <Route path='/alumni' component={Alumni}/>
+          <Route path='/features' render={() => <Redirect to="/features/chair" />} />,
+          <Route path='/highlights' render={() => <Redirect to="/highlights/wong" />} />,
+          <Route path='/students' render={() => <Redirect to="/students/awardsundergrad"  />}/>,
+          <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
+          <Route path='/overview' render={() => <Redirect to="/overview/researchcenters" />}/>,
+          <Route path='/alumni' render={() => <Redirect to="/alumni/alumnae" />}/>,
+        </Switch>
+        <Footer/>
       </div>
     );
   }

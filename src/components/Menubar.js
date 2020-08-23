@@ -29,7 +29,7 @@ class Menubar extends Component{
 
 			html.push(
 				<NavLink to={"/" + path}  activeClassName="active" key={index}>
-					<li key={index} className="menu-box-large">
+					<li key={index} className="menu-box">
 						{label}
 					</li>
 				</NavLink>

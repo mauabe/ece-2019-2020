@@ -38,7 +38,7 @@ class Header extends Component{
       <div className="header">
         <Logos
           logoPick={this.state.logoPick}
-          />
+        />
         <Menubar
           pageView={this.state.pageView}
         />
