@@ -1,67 +1,74 @@
-export const topMenu = [['features', 'Department News'], ['highlights', 'Faculty Highlights'], ['students', 'Students & Teaching'], ['faculty', 'ECE Faculty'], ['overview', 'Department Overview'], ['alumni', 'Alumni & Partnerships']];
+export const topMenu = [
+  ['features', 'Department News'],
+  ['highlights', 'Faculty Highlights'],
+  ['students', 'Students & Teaching'],
+  ['faculty', 'ECE Faculty'],
+  ['overview', 'Department Overview'],
+  ['alumni', 'Alumni & Partnerships']
+];
 
-// console.log('topMenu zip from lodash:', topMenu)
+// console.log('topMenu:', topMenu)
 
 
 export const subMenus = {
-  'features': [],
-  'highlights': [],
-  'students': [],
-  'faculty':[],
-  'overview':[],
-  'alumni':[]
+  'features': ['feature0', 'feature1', 'feature2', 'feature3','feature4', 'feature5', 'feature6'],
+  'highlights': ['highlight0', 'highlight1', 'highlight2', 'highlight3','highlight4', 'highlight5', 'highlight6'],
+  'students': ['students0', 'students1', 'students2', 'students3','students4', 'students5', 'fstudents6'],
+  'faculty':['faculty0', 'faculty1', 'faculty2', 'faculty3','facultye4', 'faculty5', 'faculty6'],
+  'overview':['overview0', 'overview1', 'overview2', 'overview3'],
+  'alumni':['alumni0', 'alumni1', 'alumni2', 'alumni3', 'alumni4']
 }
 
 export const logos = {
-  "uclabottom": "public/img/UCLA_bottom_600.png",
-  "uclaeceblue": "public/img/UCLA_ECE.png",
-  "uclaecewhite": "public/img/UCLA_ECE_WHITE.svg",
-  "ecewhite": "public/img/ECE_WHITE.svg",
-  "ece": "public/img/ECE.png",
+  "uclabottom": "/img/UCLA_bottom_600.png",
+  "uclaeceblue": "/img/UCLA_ECE.png",
+  "uclaecewhite": "/img/UCLA_ECE_WHITE.svg",
+  "ecewhite": "/img/ECE_WHITE.svg",
+  "ece": "/img/ECE.png",
 };
 
 export const slides = [
   {
-    title: "Covid-19 Pandemic Stops Everything",
-    subtitle: "Professor helps students from home",
-    description: "The internet is helping education",
-    image: "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "A message from the new Chair",
+    subtitle: "Covid-19 Pandemic Changes Everything",
+    description: "The internet is helping education. If we haven't invented it, I would like to see kids taking classes on Zoom, online grocery shopping and binge-watching your favorite show on Netflix. Yeay for us!",
+    image: "/img/covid-virus.jpg",
     link: "/2019-2020/feature1"
   },
   {
-    title: "Coronavirus in the World",
-    subtitle: "After a substantial reduction in cases, the virus roars anew in France.",
-    description: "Welcome to College. Now Quarantine.",
-    image:  "/img/covid-coronavirus2.jpg",
+    title: "Prof. Jarrahi and Dr. Yardimci receive the",
+    subtitle: "Innovation in Regulatory Science Award",
+    description: "The Burroughs Wellcome Fund recognize UCLA ECE faculty for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.",
+    image:  "/img/covid-hands.jpg",
     link: "/2019-2020/feature2"
   },
   {
-    title: "Telemedicine Saves Lives",
-    subtitle: "Social distancing saves lives, so does technology",
-    description: "The smaller the better.",
-    image:
-    "/img/covid-coronavirus2.jpg",
+    title: "Professor Warren Mori receives",
+    subtitle: "James Maxwell Award",
+    description: "He is the third faculty member honored with the prestigious award. The two prior winners are Professors Chand Joshi and Francis Chen.",
+    image: "/img/covid-mask.jpg",
     link: "/2019-2020/feature3"
   },
   {
-    title: "Stop Trying to Be Productive",
-    subtitle: "Then quarantine way",
-    description: "The internet wants you to believe you aren’t doing enough with all that “extra time” you have now.",
-    image: "/img/covid-coronavirus2.jpg",
+    title: "Dean Jayathi Murthy inducted into ",
+    subtitle: "National Academy of Engineering",
+    description: "The prestigious nomination comes from her hard work and dedication to important causes, such as brushing her teeth every morning and avoiding sugary drinks.",
+    image: "/img/covid-hacker.jpg",
     link: "/2019-2020/feature4"
   },
   {
-    title: "Keep working!",
-    subtitle: "Tennessee school districts tell their teachers to keep it going",
+    title: "Professor Willliam Keiser  was elected to the Class of 2020",
+    subtitle: "AIMBE College of Fellows",
     description: "'What virus?', they say",
-    image:"/img/covid-coronavirus2.jpg",
+    image:"/img/covid-lab.jpg",
       link: "/2019-2020/feature5"
   },
   {
-    title: "Keep working Harder!",
-    subtitle: "Tennessee school districts tell their teachers to keep it going",
-    description: "'What virus?', they say",
-    image: "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+    title: "Alumni Reza Rofougaran was elected to the Class of 2020 of the",
+    subtitle: "National Academy of Engineering",
+    description: "'Reza Rofougaran graduated from UCLA (1986, M.S. 1988, Ph.D. 1998), studying under Professor Asad Abidi, and is an active member of the Alumni Social Club",
+    image:"/img/covid-un-covid.jpg",
+    // image: "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
     link: "/2019-2020/feature6"
   }
 ];
