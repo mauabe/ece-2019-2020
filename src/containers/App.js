@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Router history = {history}> */}
-        {/* <BrowserRouter basename="/2018-2019" /> */}
+        {/* <BrowserRouter basename="/2019-2020" /> */}
           <Header/>
             <Switch>
               <Route exact path='/' component={Home}/>

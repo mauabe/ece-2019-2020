@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import logoFooter from '../assets/images/ucla-samueli-logo.svg';
 
 
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-school">
-          <div className="school-name">Electrical and Computer Engineering Department </div>
+          <div className="school-name">Electrical and Computer Engineering Department - 2019-2020</div>
         </div>
       </div>
     </div>
