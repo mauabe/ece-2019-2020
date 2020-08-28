@@ -3,14 +3,14 @@
 
 // font-family: 'Oswald', sans-serif;  font-weight: 300,500,700;font-size: .7em;
 // font-family: 'Libre Caslon Text', serif;  font-weight:  400,400i,700;font-size: .7em;
-// font-family: 'Lobster Two', cursive; font-weight: 700;font-size: .7em;
+// font-family: 'Lemon', cursive; font-weight: 700;font-size: .7em;
 
 .article{
   display: flex;
   position: relative;
   flex-wrap: wrap;
   flex-direction: column;
-  background: $greyish-brown;
+  background: $greylight;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 1em;
@@ -73,7 +73,7 @@
     z-index: 10;
 
     .article-professor-title{
-      font-family: 'Lobster Two', cursive;
+      font-family: 'Lemon', cursive;
       font-weight: 700;
       font-size: 2em;
       color: $black-20;
@@ -130,7 +130,7 @@
     color: $black-95;
   }
   span.first-letter{
-    font-family: 'Lobster Two', cursive, "Times", "Times New Roman";
+    font-family: 'Lemon', cursive, "Times", "Times New Roman";
     // initial-letter: 3 2;
     font-size:4.5em;
     float: left;
