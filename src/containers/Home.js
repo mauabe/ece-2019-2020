@@ -112,7 +112,7 @@ function Home() {
 
   return (
     <div className="slidesContainer">
-      <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
+      <button onClick={() => dispatch({ type: "PREV" })}>‹‹</button>
 
       {[...data.slides, ...data.slides, ...data.slides].map((slide, i) => {
         let offset = data.slides.length + (state.slideIndex - i);
@@ -124,7 +124,7 @@ function Home() {
             />
         );
       })}
-      <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      <button onClick={() => dispatch({ type: "NEXT" })}>››</button>
     </div>
   );
 }
