@@ -3,103 +3,60 @@
 
 .header {
   display: flex;
-  top: 20px;
-  background-color: $brown;
-  flex-direction: row;
-  justify-content: center;
-  // height: 3.5rem;
-  flex: 0 1 100%;
-  // align-items: center;
-  align-content: space-between;
+  // top: 20px;
   z-index: 20;
+  // background-color: $brown;
+  // flex: 1 1 100%;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1.3em;
+  // padding-bottom: 20%;
 
   .logos{
     margin-left: 3rem;
     margin-right: 3rem;
     flex: none;
-    top: -5px;
-    background: teal;
+    // top: -5px;
 
     .logo-image{
-      width: 90px;
+      width: 98px;
       height: auto;
       // margin-top: 5px;
       // margin-left: 30px;
     }
   }
 
-  .menu-container{
+  ul.menu-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 100%;
+    background: transparent;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 2em;
+    height: 44px;
 
-    /* This aligns items to the end line on main-axis */
-    // justify-content: flex-end;
-    // margin-left: 20px;
-    // background-color: pink;
-
-    .top-menu{
-      display: flex;
-      align-items: flex-start;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      // opacity: 0;
-
-      ul {
-        padding: 0;
-        flex: 0 0 100%;
-        background: transparent;
-
-        a, li{
-          // color: $black-20;
-          color: orange;
-          opacity: 0.8;
-          font-weight: 500;
-          font-family: Oswald;
-          font-size: .9em;
-          list-style: none;
-          opacity: 0.7;
-          cursor: pointer;
-          -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
-          filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.3));
-
-          &:hover,
-          &:active{
-            opacity: 1;
-            transform: all .3s ease-out;
-
-          }
-        }
-      }
-
-      // a.active {
-      //   menu-box{
-      //     // border: 2px solid $orange;
-      //     transform: all .3s ease-out;
-      //   }
-      // }
-
-      .menu-box{
-        width: 145px;
-        height: 44px;
-        background-color: $menublue;;
-        // border: 2px solid $borderblue;
-        // border-radius: 0 0 10px 3px;
-        margin-right: 7px;
-        margin-bottom: 7px;
+       a, li.menu-item{
+        // align-items: center;
+        // justify-content: center;
+        color: $black-60;
+        padding-right: 2em;
+        font-weight: 500;
+        font-family: Oswald;
+        font-size: 1em;
+        opacity: 0.85;
         cursor: pointer;
+        -webkit-filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 8px 6px rgba(0,0,0,0.2));
+        background-color: transparent;
 
-      }
-      .menu-box:hover,
-      .menu-box:active{
-        color: $pink;
-        opacity: 0.8;
-        transform: all .5s ease-in-out;
-        // border-color: $orange;
-        -webkit-filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
-        filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.5));
-      }
+        &:hover,
+        &:active{
+          opacity: 1;
+          color: $black-80;
+          transform: all .8s ease-out;
+        }
+
     }
 
 

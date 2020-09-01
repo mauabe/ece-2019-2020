@@ -6,20 +6,16 @@ const Footer = () => {
 
   return (
     <div className=" site-footer ">
-      <div className="footer-container">
-
-        <div className=" footer-logo">
+      <div className=" footer-logo">
           <img
             src={logoFooter}
             alt="UCLA"
             title="UCLA footer"
           />
         </div>
-
-        <div className="footer-school">
-          <div className="school-name">Electrical and Computer Engineering Department - 2019-2020</div>
+        <div className="footer-dept">
+          Electrical and Computer Engineering Department - 2019-2020
         </div>
-      </div>
     </div>
   );
 }

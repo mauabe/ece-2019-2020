@@ -1,13 +1,12 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  position: relative;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+//   position: relative;
+// }
 
 // html,
 // body {
@@ -15,7 +14,7 @@
 //   width: 100%;
 //   margin: 0;
 //   padding: 0;
-//   // font-size: 3vmin;
+//   font-size: 3vmin;
 // }
 
 // html {
@@ -31,30 +30,24 @@
 // }
 
 
-// .home-container {
-//   // width: 100%;
-//   height: 100%;
-//   transition: opacity .8s ease-out 0.5s;
-//   // justify-content: center;
-//   // padding-top: 20rem;
-//   // padding-bottom: 10rem;
-//   // font-size: 3vmin;
-//   // transition: opacity 0.7s ease-in-out 0.3s;
-//   transition-delay: 0.5s;
-// }
-
 .slidesContainer {
+  display: grid;
   width: 100%;
   height: 75%;
-  display: grid;
+  top: 50%;
+  grid-template-rows: auto;
   transition-delay: 0.5s;
+  padding-top: 12%;
 
   > .slide {
     grid-area: 1 / -1 / auto / auto;
+    width: 30%;
+    height: 50%;
+    // border: 2px dashed rgba(236, 198, 48, 0.5);
   }
 
   > button {
-    appearance: none;
+    // appearance: none;
     background: transparent;
     border: none;
     color: white;
@@ -62,10 +55,11 @@
     font-size: 9rem;
     width: 10rem;
     height: 10rem;
-    top: 45%;
+    // top: 45%;
+    top: 45px;
     transition: opacity 0.2s;
     opacity: 0.85;
-    z-index: 5;
+    z-index: 25;
     text-shadow: 2rem 2rem 5rem red;
 
     &:hover {
@@ -99,13 +93,13 @@
 // }
 
 .slideContent {
-  width: 35vw;
+  width: 30vw;
   height: 40vw;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
-  opacity: 0.9;
+  opacity: 0.8;
 
   display: grid;
   align-content: center;
@@ -194,7 +188,7 @@
     &:hover {
       transition: transform 0.1s ease-in-out;
       transform: perspective(1000px)
-        rotateX(calc(var(--y) * -5deg))
+        // rotateX(calc(var(--y) * -5deg))
         rotateY(calc(var(--x) * 30deg));
     }
   }
