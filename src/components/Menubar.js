@@ -29,7 +29,7 @@ class Menubar extends Component{
 
 			html.push(
 				<NavLink to={"/" + path}  activeClassName="active" key={index}>
-					<li key={index} className="menu-box">
+					<li key={index} className="menu-item">
 						{label}
 					</li>
 				</NavLink>
@@ -41,11 +41,9 @@ class Menubar extends Component{
 		render() {
 				// console.log('%c this.PROPS at MENUBAR render ', 'color:black;background:dodgerblue;padding:6px;border:1px dashed black', this.props);
     return (
-      <div className="menu-container">
-				<ul className="top-menu">
+      <ul className="menu-container">
 					{this.navigationHtml()}
-				</ul>
-      </div>
+      </ul>
     );
   }
 }

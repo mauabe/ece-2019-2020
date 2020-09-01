@@ -90,18 +90,18 @@ function Slide({ slide, offset }) {
         // }}
       />
       <Link to={`/features/${slide.link}`} >
-      <div
-        className="slideContent"
-        style={{
-          backgroundImage: `url('${slide.image}')`
-        }}
-      >
-        <div className="slideContentInner">
-          <h2 className="slideTitle">{slide.title}</h2>
-          <h3 className="slideSubtitle">{slide.subtitle}</h3>
-          <p className="slideDescription">{slide.description}</p>
+        <div
+          className="slideContent"
+          style={{
+            backgroundImage: `url('${slide.image}')`
+          }}
+        >
+          <div className="slideContentInner">
+            <h2 className="slideTitle">{slide.title}</h2>
+            <h3 className="slideSubtitle">{slide.subtitle}</h3>
+            <p className="slideDescription">{slide.description}</p>
+          </div>
         </div>
-      </div>
       </Link >
     </div>
   );
