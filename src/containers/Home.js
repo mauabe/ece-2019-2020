@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, BrowserRouter } from "react-router-dom";
 import * as data from '../assets/data'
 // import Carousel from './Carousel'
 // import eceblue from '../assets/images/ECE_logo_blue.svg';
@@ -89,6 +89,7 @@ function Slide({ slide, offset }) {
         //   backgroundImage: `url('${slide.image}')`
         // }}
       />
+      <BrowserRouter basename="/2019-2020"/>
       <Link to={`/features/${slide.link}`} >
         <div
           className="slideContent"
@@ -112,7 +113,7 @@ function Home() {
 
   return (
     <div className="slidesContainer">
-      <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
+      <button onClick={() => dispatch({ type: "PREV" })}>‹‹</button>
 
       {[...data.slides, ...data.slides, ...data.slides].map((slide, i) => {
         let offset = data.slides.length + (state.slideIndex - i);
@@ -124,7 +125,7 @@ function Home() {
             />
         );
       })}
-      <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      <button onClick={() => dispatch({ type: "NEXT" })}>››</button>
     </div>
   );
 }
