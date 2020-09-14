@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, BrowserRouter } from "react-router-dom";
 import * as data from '../assets/data'
 // import Carousel from './Carousel'
 // import eceblue from '../assets/images/ECE_logo_blue.svg';
@@ -89,6 +89,7 @@ function Slide({ slide, offset }) {
         //   backgroundImage: `url('${slide.image}')`
         // }}
       />
+      <BrowserRouter basename="/2019-2020"/>
       <Link to={`/features/${slide.link}`} >
         <div
           className="slideContent"
