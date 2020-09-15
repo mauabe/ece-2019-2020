@@ -53,12 +53,11 @@ class Article extends Component{
     <div className={`article ${articleId}`}>
       <div className='article-content'>
 
-          <img src={`${articleImageMain}`}
-            alt={`${articleImageAltTextMain}`}
-            title={`${articleId}`}
-            className="article-main-photo"
-          />
-
+        <img src={`${articleImageMain}`}
+          alt={`${articleImageAltTextMain}`}
+          title={`${articleId}`}
+          className="article-main-photo"
+        />
 
         <div className="article-header">
             <img

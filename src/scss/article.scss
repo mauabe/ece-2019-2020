@@ -35,54 +35,41 @@
     }
 
     .article-header{
-      position: relative;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 2.4em;
-      z-index: 10;
-      margin-top: 2em;
-      align-items:flex-start;
+      display: flex;
       flex-direction: row;
-      // width: 100%;
-      // justify-content: center;
+      position: relative;
+      // z-index: 10;
+      margin: 2em;
+      justify-items: start;
+      overflow: auto;
 
-      .author{
+      img.author{
         overflow: hidden;
         border-radius: 45px 5px 45px 5px;
-        transition: all 1s ease-in-out;
-        -webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
+        // -webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
         filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
-        img{
-          width: 9em;
-          height: 9em;
-          object-fit: cover;
-          margin-right: 4em;
-          margin-bottom: 4em;
-          border-radius: 40px 5px 40px 5px;
-          border: 2px solid $orange1;
-          // height:100%;
+        width: 9em;
+        height: 9em;
+        object-fit: cover;
+        margin-right: 4em;
+        border: 2px solid $orange1;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          object-position: 25% 50%;
+          filter: drop-shadow(12px 12px 12px rgba(0,0,0,0.3));
         }
+        // margin-bottom: 4em;
       }
 
       .article-headline{
-        margin-left: 14em;
-        top: -10em;
-        // height: 100%;
+        position: relative;
+        margin: 0 0 4em 0;
 
-        .article-professor-title{
-          font-family: 'Lemon', cursive;
+        .article-professor-title, .article-professor-name {
+          // font-family: 'Lemon', cursive;
           font-family: 'Oswald', sans-serif;
           font-weight: 300;
-          font-size: 1.4em;
-          // color: $orange2;
-          color: $black-60;
-        }
-        .article-professor-name{
-          font-family: 'Lemon', cursive;
-          font-family: 'Oswald', sans-serif;
-          font-weight: 300,;
-          font-size: 1.4em;
-          // color: $black-60;
+          font-size: 1.3em;
           color: $black-60;
         }
         .headline{
@@ -91,14 +78,12 @@
           color: $black-60;
           font-size: 2.8em;
           color: $orange2;
-          // margin-left: 4em;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
           font-weight: 500;
-          font-size: 1.5em;
+          font-size: 1.8em;
           color: $black-60;
-          // margin-left: 4em;
         }
       }
     }
@@ -112,6 +97,7 @@
     // .callout-right{  display: none;}
 
     .text-copy{
+      display: flex;
       font-family: 'Libre Caslon Text', serif;
       font-weight: 400;
       font-size: 1em;
@@ -119,8 +105,9 @@
       text-align: justify;
       text-justify: inter-word;
       text-indent: 2em;
+      line-height: 1.8;
       margin-top: -80px;
-      color: $black-95;
+      color: $black-80;
       .text-body {
         text-align:justify;
         text-justify: inter-word;
@@ -155,10 +142,7 @@
   .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr;
-    // position: relative;
     object-fit: cover;
-    // overflow: hidden;
 
     img.articleImageLeft {
       object-fit: cover;
@@ -166,10 +150,6 @@
       width: 100%;
       height: 280px;
       overflow: hidden;
-
-      // -webkit-filter: drop-shadow(4px 6px 6px rgba(0,0,0,0.4));
-      // filter: drop-shadow(4px 6px 6px rgba(0,0,0,0.4));
-      // border: 4px dotterd pink;
     }
     img.articleImageRight {
       object-fit: cover;
@@ -177,9 +157,6 @@
       width: 100%;
       height: 280px;
       overflow: hidden;
-      // -webkit-filter: drop-shadow(4px 6px 6px rgba(0,0,0,0.4));
-      // filter: drop-shadow(4px 6px 6px rgba(0,0,0,0.4));
-      // border: 4px dotterd pink;
     }
   }
 }
