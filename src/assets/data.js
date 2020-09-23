@@ -1,5 +1,5 @@
 export const topMenu = [
-  ['features', 'Department News'],
+  ['news', 'Department News'],
   ['highlights', 'Faculty Highlights'],
   ['students', 'Students & Teaching'],
   ['faculty', 'ECE Faculty'],
@@ -11,7 +11,7 @@ export const topMenu = [
 
 
 export const subMenus = {
-  'features': ['feature0', 'feature1', 'feature2', 'feature3','feature4', 'feature5', 'feature6'],
+  'news': ['news0', 'news1', 'news2', 'news3','news4', 'news5', 'fnews'],
   'highlights': ['highlight0', 'highlight1', 'highlight2', 'highlight3','highlight4', 'highlight5', 'highlight6'],
   'students': ['students0', 'students1', 'students2', 'students3','students4', 'students5', 'fstudents6'],
   'faculty':['faculty0', 'faculty1', 'faculty2', 'faculty3','facultye4', 'faculty5', 'faculty6'],
@@ -57,7 +57,7 @@ export const slides = [
     link: "feature4"
   },
   {
-    title: "Professor Willliam Keiser  was elected to the Class of 2020",
+    title: "Professor Willliam Kaiser  was elected to the Class of 2020",
     subtitle: "AIMBE College of Fellows",
     description: '"What virus?", they say',
     image:"/img/covid-lab.jpg",

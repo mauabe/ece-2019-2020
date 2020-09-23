@@ -19,7 +19,7 @@ class Header extends Component{
 
   componentDidMount(){
     const components = this.props.location.pathname.split('/');
-    if (components.indexOf('features') !== -1) this.setState ({pageView: 'features'});
+    if (components.indexOf('news') !== -1) this.setState ({pageView: 'news'});
     if (components.indexOf('highlights') !== -1) this.setState ({pageView: 'highlights'});
     if (components.indexOf('students') !== -1) this.setState ({pageView: 'students'});
     if (components.indexOf('faculty') !== -1) this.setState ({pageView: 'faculty'});

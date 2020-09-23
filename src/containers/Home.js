@@ -90,7 +90,7 @@ function Slide({ slide, offset }) {
         // }}
       />
       <BrowserRouter basename="/2019-2020"/>
-      <Link to={`/features/${slide.link}`} >
+      <Link to={`/news/${slide.link}`} >
         <div
           className="slideContent"
           style={{
