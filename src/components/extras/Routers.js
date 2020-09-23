@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom'
 class Routers extends Component (){
 
   // const routes = [
-  //   { path: '/', name: 'Features', Component: Features },
+  //   { path: '/', name: 'News', Component: News },
   //   { path: '/highlights', name: 'About', Component: About },
   //   { path: '/contact', name: 'Contact', Component: Contact },
   //   { path: '/', name: 'Home', Component: Home },

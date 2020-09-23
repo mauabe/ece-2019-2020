@@ -4,7 +4,7 @@ import '../scss/styles.scss';
 
 import Header from './Header';
 import Home from './Home';
-import Features from './Features';
+import News from './News';
 import Highlights from './Highlights';
 import Students from './Students';
 import Faculty from './Faculty';
@@ -16,16 +16,7 @@ class App extends Component {
   constructor(props) {
 		super(props);
 	  this.state = { }
-  // console.log('%c PROPS at APP CONSTRUCTOR', 'color:white;background:black;padding:6px;border:3px dashed yellow', this.props)
   }
-
-  // renderPlaceholder = () => {
-  //   return (<div>
-  //     <div style={{ "padding": "50px", "textAlign": "center" }}>
-  //       <h3>THIS FEATURE IS NOT YET AVAILABLE</h3>
-  //     </div>
-  //   </div>);
-  // }
 
   render(){
     return (
@@ -33,14 +24,14 @@ class App extends Component {
         <Header/>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/features' component={Features}/>
+          <Route path='/news' component={News}/>
           <Route path='/highlights' component={Highlights}/>
           <Route path='/students' component={Students}/>
           <Route path='/faculty' component={Faculty}/>
           <Route path='/overview' component={Overview}/>
           <Route path='/alumni' component={Alumni}/>
-          <Route path='/features' render={() => <Redirect to="/features/chair" />} />,
-          <Route path='/highlights' render={() => <Redirect to="/highlights/wong" />} />,
+          <Route path='/news' render={() => <Redirect to="/news/chair" />} />,
+          <Route path='/highlights' render={() => <Redirect to="/highlights/jaharri" />} />,
           <Route path='/students' render={() => <Redirect to="/students/awardsundergrad"  />}/>,
           <Route path='/faculty' render={() => <Redirect to="/faculty/ces" />}/>,
           <Route path='/overview' render={() => <Redirect to="/overview/researchcenters" />}/>,
