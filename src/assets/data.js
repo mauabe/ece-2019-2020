@@ -79,15 +79,15 @@ export const slides = [
 -  New Faculty:  Nader Sehatbakhsh
 
 2.  Faculty Highlights
--  Prof. Jarrahi and Dr. Yardimci receive an Innovation in Regulatory Science Award from the Burroughs Wellcome Fund for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.
+-  DONE Prof. Jarrahi and Dr. Yardimci receive an Innovation in Regulatory Science Award from the Burroughs Wellcome Fund for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.
 
 - Asad Madni for UK National Academy - we can talk about some of the other awards within the section - He gave me a page for his awards
 
--  Warren Mori’s James Maxwell Award (We have 2 prior award winners, Joshi and Francis Chen)
+-  DONE Warren Mori’s James Maxwell Award (We have 2 prior award winners, Joshi and Francis Chen)
 
-- Prof. Paulo Tabuada has been elected as a fellow of IFAC, the International Federation of Automatic Control.
+- DONE Prof. Paulo Tabuada has been elected as a fellow of IFAC, the International Federation of Automatic Control.
 
--  Dr. William Kaiser has been elected to the AIMBE College of Fellows – Class of 2020.
+-  DONE   Dr. William Kaiser has been elected to the AIMBE College of Fellows – Class of 2020.
 
 -  Prof. Chee Wei Wong has been elected to the rank of NAI Fellow by the 2019 National Academy of Inventors (NAI) Fellows Selection Committee and Board of Directors.
 

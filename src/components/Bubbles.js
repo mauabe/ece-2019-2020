@@ -34,7 +34,6 @@ class Bubbles extends Component{
       bubbleHtml.push(
         <Bubble
           key={obj.articleId}
-          // divClassName={`bubble sheihaiha ${obj.articleId}`}
           pageView={pageView}
           articleId={obj.articleId}
           articleSelection={this.state.articleSelection}

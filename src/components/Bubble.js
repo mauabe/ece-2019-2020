@@ -12,7 +12,7 @@ class Bubble extends Component{
 
   handleBubbleClick = (e) => {
     const{articleId} = this.props;
-    // e.preventDefault();
+    e.preventDefault();
     this.props.onClick(articleId, e);
   }
 
@@ -21,16 +21,14 @@ class Bubble extends Component{
     const className = ( articleSelection === articleId) ? `${articleId} active`: `${articleId}`;
 
     return (
-      <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link">
-        <div className={`bubble ${className}`} key={articleId} onClick={this.handleBubbleClick} >
-          <div className="bubble-cropper">
+      <NavLink exact to={`/${pageView}/${articleId}`} activeClassName="active" className="bubble-link" onClick={this.handleBubbleClick} key={articleId}>
+          <div className="bubble-frame">
             <img src={`${articleImageProf}`} alt={`${articleImageAltTextProf}`} title={`${articleId}`} className={`bubble-image ${className}`} />
           </div>
           <div>
             <span className={`bubble-profTitle ${className}`}>{professorTitle} </span>&nbsp;<span className={`bubble-profName ${className}`}>{professorName}</span>
           </div>
           <div className={`bubble-headline ${className}`}>{ ReactHtmlParser(articleAbrevTitle) }</div>
-        </div>
        </NavLink>
     );
   }
