@@ -89,15 +89,15 @@ export const slides = [
 
 -  DONE   Dr. William Kaiser has been elected to the AIMBE College of Fellows – Class of 2020.
 
--  Prof. Chee Wei Wong has been elected to the rank of NAI Fellow by the 2019 National Academy of Inventors (NAI) Fellows Selection Committee and Board of Directors.
+-  DONE Prof. Chee Wei Wong has been elected to the rank of NAI Fellow by the 2019 National Academy of Inventors (NAI) Fellows Selection Committee and Board of Directors.
 
--  The Fusion Power Associates Board of Directors has voted to honor Professor Emeritus Francis F. Chen with a Special FPA Distinguished Career Award, for his “decades of outstanding achievements in science and education relating to plasma physics and fusion.”
+- DONE  The Fusion Power Associates Board of Directors has voted to honor Professor Emeritus Francis F. Chen with a Special FPA Distinguished Career Award, for his “decades of outstanding achievements in science and education relating to plasma physics and fusion.”
 
 -  Dean Jayathi Murthy has just been inducted into the National Academy of Engineering Class of 2020
 
 -  Alumni,  Reza Rofougaran (1986, M.S. 1988, Ph.D. 1998, under Prof. Asad Abidi) was also elected to the National Academy of Engineering Class of 2020
 
--  Xiang “Anthony” Chen was selected as a 2020-21 UCLA Hellman Fellows
+-  DONE Xiang “Anthony” Chen was selected as a 2020-21 UCLA Hellman Fellows
 
 
 3.  Students & Teaching
