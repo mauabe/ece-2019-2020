@@ -79,21 +79,23 @@ export const slides = [
 -  New Faculty:  Nader Sehatbakhsh
 
 2.  Faculty Highlights
--  DONE Prof. Jarrahi and Dr. Yardimci receive an Innovation in Regulatory Science Award from the Burroughs Wellcome Fund for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.
 
-- Asad Madni for UK National Academy - we can talk about some of the other awards within the section - He gave me a page for his awards
+** DONE Prof. Jarrahi and Dr. Yardimci receive an Innovation in Regulatory Science Award from the Burroughs Wellcome Fund for their innovative terahertz technology facilitating regulatory decisions on agricultural food products.
 
--  DONE Warren Mori’s James Maxwell Award (We have 2 prior award winners, Joshi and Francis Chen)
 
-- DONE Prof. Paulo Tabuada has been elected as a fellow of IFAC, the International Federation of Automatic Control.
+** DONE Asad Madni for UK National Academy - we can talk about some of the other awards within the section - He gave me a page for his awards
 
--  DONE   Dr. William Kaiser has been elected to the AIMBE College of Fellows – Class of 2020.
+** DONE Warren Mori’s James Maxwell Award (We have 2 prior award winners, Joshi and Francis Chen)
 
--  DONE Prof. Chee Wei Wong has been elected to the rank of NAI Fellow by the 2019 National Academy of Inventors (NAI) Fellows Selection Committee and Board of Directors.
+** DONE Prof. Paulo Tabuada has been elected as a fellow of IFAC, the International Federation of Automatic Control.
 
-- DONE  The Fusion Power Associates Board of Directors has voted to honor Professor Emeritus Francis F. Chen with a Special FPA Distinguished Career Award, for his “decades of outstanding achievements in science and education relating to plasma physics and fusion.”
+** DONE   Dr. William Kaiser has been elected to the AIMBE College of Fellows – Class of 2020.
 
--  Dean Jayathi Murthy has just been inducted into the National Academy of Engineering Class of 2020
+** DONE Prof. Chee Wei Wong has been elected to the rank of NAI Fellow by the 2019 National Academy of Inventors (NAI) Fellows Selection Committee and Board of Directors.
+
+** DONE  The Fusion Power Associates Board of Directors has voted to honor Professor Emeritus Francis F. Chen with a Special FPA Distinguished Career Award, for his “decades of outstanding achievements in science and education relating to plasma physics and fusion.”
+
+** Dean Jayathi Murthy has just been inducted into the National Academy of Engineering Class of 2020
 
 -  Alumni,  Reza Rofougaran (1986, M.S. 1988, Ph.D. 1998, under Prof. Asad Abidi) was also elected to the National Academy of Engineering Class of 2020
 
