@@ -90,7 +90,7 @@ export const articlesAlumni = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: '/img/engineering-bldg.jpg',
+    articleImageMain: '/img/computer-board.jpg',
     articleImageAltTextMain: '',
     articleImageProf: '/img/YangKen2.jpg',
     articleImageAltTextProf: 'Professor Ken Yang',

@@ -10,10 +10,10 @@ table{
   // text-align: left;
 }
 
-thead {
+// thead {
   // align-items: center;
   // text-align: left;
-}
+// }
 tr th {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -77,10 +77,16 @@ tr.sub-total{
   align-items: start;
 }
 
+img.card-pic {
+  border-radius: 0;
+  object-fit: contain;
+  object-position: 50% 50%;
+  overflow: hidden;
+}
+
 .card-overview {
 
   overflow-y: auto; //responsive
-  // overflow-x: auto; //responsive
   background-color: none;
   border-radius: 5px;
   align-items: start;
@@ -91,9 +97,13 @@ tr.sub-total{
   height: auto;
   width: 100%;
 }
-// .card-overview tr{
-//     padding-top: O.3em;
-//   }
+
+ul, li, ul.card-bottom{
+  background: none;
+  // li{
+  //   background: none;
+  // }
+}
 
 .spacer{
   margin: 1em 0;
