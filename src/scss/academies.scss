@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 1em;
+  grid-gap: 1.1em;
   // padding: 1em;
 
   h3.page-title{
@@ -31,7 +31,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
     grid-template-rows: auto ;
-    grid-gap: 1.5em;
+    grid-gap: 2.2em;
     text-indent: 0;
     justify-items: start;
   }
@@ -48,10 +48,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
-    // grid-template-rows: auto ;
     grid-gap: 1.5em;
     text-indent: 0;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    // grid-template-rows: auto ;
     // justify-items: start;
     // align-items: center;
   }
@@ -65,17 +65,17 @@
     min-width: 270px;
     min-height: 300px;
     border-radius: 4px;
-    background: $cardtop;
+    background: $grey-lighter--30;
     align-items: start;
     padding: 1em;
   }
+
   .card-alumni {
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s ease-in-out;
     min-width: 270px;
     min-height: 300px;
-    border-radius: 4px;
+    border-radius: 5px;
     background: $cardbottom;
     align-items: start;
     padding: 1em;
@@ -162,10 +162,17 @@
     overflow: hidden;
     margin-bottom: 0;
   }
-  img.card-pic-ibm{
+  .frame img.card-pic{
     object-fit: cover;
     object-position: 50% 50%;
     overflow: hidden;
+    // width: 9em;
+    // height: 9em;
+    object-fit: cover;
+    z-index: 10;
+    margin-right: 50%;
+    // padding-bottom: 1em;
+    // border: 2px solid $orange1;
   }
 
   .acad-name{
@@ -182,59 +189,69 @@
   .card-partner:hover,
   .card-dept:hover {
      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-     background: $cardbottom2;
-    .frame{
-      border: 2p solid $menublue;
+    //  background: $grey-lighter--50;
     }
-    .acad-prof2{
-      color:$menublue;
-    }
-    .acad-name{
-      color:$menublue;
-    }
-  }
 
 
 
   .frame{
-    border: 2px solid $black-60;
-    border-radius: 5px;
-    margin-left: 30%;
-    margin-right: 30%;
+    overflow: hidden;
+    border-radius: 25px 5px 25px 5px;
+    border: 1px solid $black-40;
+    margin: 0 30% 10em 30%;
     max-width: 40%;
     height: 0;
     padding-bottom: 49%;
-    background-color: white;
     overflow: hidden;
-    margin-bottom: 1em;
-    object-fit: contain;
+    object-fit: cover;
     object-position: 50% 50%;
     transition: all 0.3s ease;
     font-size: 0;
+    // background: white;
+    // margin-right: 30%;
+    // border-radius: 5px;
+    // margin-bottom: 1em;
   }
   .frame-logo{
     border: 0;
     margin:1%;
     object-fit: contain;
     object-position: 50% 50%;
-  }
 
-  img.card-pic{
-    object-fit: contain;
-    object-position: 50% 50%;
-    overflow: hidden;
-  }
+    frame{
+      img .card-pic{
+      object-fit: cover;
+      object-fit: contain;
+      object-position: 50% 50%;
+      overflow: hidden;
 
-  img.card-pic.aab-chair {
-    object-fit: cover;
-    display: block;
+      // -webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
+      // filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
+      // width: 9em;
+      // height: 9em;
+      // margin-right: 4em;
+      border: 2px solid $orange1;
+      transition: all 0.3s ease-in-out;
+      border-radius: 45px 5px 45px 5px;
+      &:hover{
+        object-position: 25% 25%;
+        filter: drop-shadow(12px 12px 12px rgba(0,0,0,0.3));
+      }
+    }
+    }
+
+      img.card-pic.aab-chair {
+        object-fit: cover;
+        display: block;
+      }
   }
 
   .acad-prof1{
     font-family: 'Lemon', cursive;
     font-size: 1em;
-    color: $menublue;
+    color: $DimGray;
     text-align: center;
+    margin-top: 1em;
   }
   .acad-prof2{
     font-family: 'Oswald', sans-serif;
@@ -326,20 +343,24 @@
     object-position: 50% 50%;
     overflow: hidden;
   }
+
   .frame-book{
-    border: 2px solid $black-60;
     transition: all 0.3s ease-in-out;
-    border-radius: 0px;
     margin-left: 30%;
     margin-right: 30%;
     max-width: 40%;
+    height: 4em;
+    width: 40%;
     height: 0;
     padding-bottom: 49%;
-    background-color: white;
+    background: white;
     overflow: hidden;
     margin-bottom: 1em;
     object-fit: contain;
     object-position: 50% 50%;
+    overflow: hidden;
+    border: 2px solid $black-40;
+    border-radius: 25px 5px 25px 5px;
   }
   .card-alumni.book{
       transition: all 0.3s ease;
