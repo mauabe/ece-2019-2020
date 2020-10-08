@@ -3,11 +3,8 @@
 
 .header {
   display: flex;
-  // top: 20px;
   z-index: 20;
-
   flex-direction: row;
-  justify-content: end;
   align-items: center;
   padding-top: 1.3em;
 
@@ -33,7 +30,7 @@
     height: 44px;
 
     a, li.menu-item{
-      // justify-self: end;
+      // justify-self: flex-end;
       color: $black-60;
       padding-left: 1.2em;
       padding-bottom: 0.3em;
