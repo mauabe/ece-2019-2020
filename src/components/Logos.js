@@ -8,7 +8,7 @@ class Logos extends Component {
   constructor(props) {
 		super(props);
 	  this.state = {}
-    console.log('%c PROPS at LOGOS constructor', 'color:black;background:#orange;padding:6px;border:4px dashed yellow', this.props )
+    // console.log('%c PROPS at LOGOS constructor', 'color:black;background:orange;padding:6px;border:4px dashed yellow', this.props )
   //   //LOGOS should receive {logoPick, pageView} as PROPS
 	}
 

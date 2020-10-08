@@ -6,3 +6,7 @@
 	RewriteRule ^ index.html [QSA,L]
 
 </IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
