@@ -3,8 +3,8 @@ export const topMenu = [
   ['highlights', 'Faculty Highlights'],
   // ['students', 'Students & Teaching'],
   ['faculty', 'ECE Faculty'],
-  // ['overview', 'Department Overview'],
-  // ['alumni', 'Alumni & Partnerships']
+  ['overview', 'Department Overview'],
+  ['alumni', 'Alumni & Partnerships']
 ];
 
 // console.log('topMenu:', topMenu)
