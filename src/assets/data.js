@@ -1,10 +1,10 @@
 export const topMenu = [
   ['news', 'Department News'],
   ['highlights', 'Faculty Highlights'],
-  // ['students', 'Students & Teaching'],
+  ['students', 'Students & Teaching'],
   ['faculty', 'ECE Faculty'],
-  ['overview', 'Department Overview'],
-  ['alumni', 'Alumni & Partnerships']
+  // ['overview', 'Department Overview'],
+  // ['alumni', 'Alumni & Partnerships']
 ];
 
 // console.log('topMenu:', topMenu)

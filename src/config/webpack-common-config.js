@@ -10,6 +10,7 @@ const paths = require('./paths');
 
 module.exports = {
   plugins: [
+    // new optimization.namedModules(),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
