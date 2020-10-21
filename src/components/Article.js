@@ -71,7 +71,7 @@ class Article extends Component{
             <span className="article-professor-title">{professorTitle} </span>
             <span className="article-professor-name">{professorName} </span>
             <div className="headline">{articleHeadline} </div>
-            <div className="subhead">{articleSubhead} </div>
+            <div className="subhead">{ ReactHtmlParser(articleSubhead)} </div>
           </div>
         </div>
 
