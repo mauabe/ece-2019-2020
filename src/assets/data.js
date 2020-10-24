@@ -3,8 +3,8 @@ export const topMenu = [
   ['highlights', 'Faculty Highlights'],
   ['students', 'Students & Teaching'],
   ['faculty', 'ECE Faculty'],
-  // ['overview', 'Department Overview'],
-  // ['alumni', 'Alumni & Partnerships']
+  ['overview', 'Department Overview'],
+  ['alumni', 'Alumni & Partnerships']
 ];
 
 // console.log('topMenu:', topMenu)
@@ -57,7 +57,7 @@ export const slides = [
     link: "news2"
   },
   {
-    title: "Professor Willliam Kaiser was elected to the Class of 2020",
+    title: "Emeritus Professor Willliam Kaiser was elected to the Class of 2020",
     subtitle: "AIMBE College of Fellows",
     description: 'For seminal contributions to development and commercialization of networked biomedical sensors and analytics enabling the field of wireless health monitoring.',
     image:"/img/covid-lab.jpg",
