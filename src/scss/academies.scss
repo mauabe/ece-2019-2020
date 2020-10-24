@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "./variables.scss";
 
-.grid-academies{
+.grid-cards{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -16,7 +16,7 @@
     text-indent: 0;
     background: transparent;
   }
-  img.cpu {
+  img.full-width-img {
     width: 100%;
     max-height: 200px;
     float: left;
@@ -24,7 +24,7 @@
     object-position: 50% 50%;
     overflow: hidden;
     margin-bottom: 0.5em;
-    display: none
+    // display: none
   }
   .card-deck{
     display: grid;
@@ -34,22 +34,24 @@
     text-indent: 0;
     justify-items: start;
     // padding: 1em 0 0 0;
-  }
-  .card-deck.partner{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
-    grid-template-rows: auto ;
-    grid-gap: 1.5em;
-    text-indent: 0;
-    justify-items: center;
-    align-items: center;
-  }
-  .card-deck.dept{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1.5em;
-    text-indent: 0;
+
+    .dept{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 1.5em;
+      text-indent: 0;
+    }
+    .partner{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+      grid-template-rows: auto ;
+      grid-gap: 1.5em;
+      text-indent: 0;
+      justify-items: center;
+      align-items: center;
+    }
+
   }
   .card {
     display: grid;
@@ -63,13 +65,9 @@
     align-items: start;
     padding: 1em;
 
-  }
-  .card-deck.dept{
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1.5em;
-  }
-  .card.card-dept{
-    min-height:550px;
+    .card-dept{
+      min-height:550px;
+    }
   }
 
   .card-partner {
@@ -79,22 +77,13 @@
     min-width: 300px;
     min-height: 180px;
     border-radius: 4px;
-    background: $greylight;
+    background-color: $grey-lighter--30;
     align-items: center;
     justify-items: center;
     padding: 1em;
+    // grid-template-columns: 1fr;
   }
 
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    // transition: all 0.3s ease-in-out;
-    // border-radius: 4px;
-    // min-width: 270px;
-    // background: $grey-lighter--30;
-    // align-items: start;
-    // padding: 1em;
-    // width: 100%;
 
   .card-deck.dept.credits{
     grid-template-rows: 1fr 1fr;
@@ -173,38 +162,40 @@
     height: 0;
     padding-bottom: 49%;
     overflow: hidden;
-    // object-fit: cover;
-    // object-position: 50% 50%;
+    object-fit: contain;
+    object-position: 50% 50%;
     // transition: all 0.3s ease;
     font-size: 0;
-    background: white;
+    background-color: white;
 
     .frame-logo{
       border: 0;
       margin:1%;
+      background-color: transparent;
       // object-position: 50% 50%;
     }
 
-    img.card-pic{
-      width: 100%;
+    // img.card-pic{
+      // width: 100%;
       // height: 50%;
       // object-fit: contain;
-    }
+    // }
 
-      img.card-pic.aab-chair {
-        object-fit: cover;
-        display: block;
-      }
+
+      // img.card-pic.aab-chair {
+      //   object-fit: cover;
+      //   display: block;
+      // }
   }
 
-  .acad-prof1{
+  .acad-prof{
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     color: $DimGray;
     text-align: center;
     margin-top: 1em;
   }
-  .acad-prof2{
+  .acad-prof2--old{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 1em;
@@ -269,13 +260,13 @@
     color: $menublue;
     text-align: center;
   }
-  span.acad-prof1-cred2{
+  span.acad-prof-cred2{
     font-family: 'Lemon', cursive;
     font-size: 1.2em;
     color: $menublue;
     text-align: start;
   }
-  span.acad-prof1-cred3 {
+  span.acad-prof-cred3 {
     font-family: "Libre Caslon Text", serif;
     font-weight: 700;
     font-size: 1.1m;
@@ -283,17 +274,17 @@
     // text-align: start;
     margin-bottom: 0.4em;
   }
-  .acad-prof1.dept{
+  .acad-prof.dept{
     font-size: 2em;
     margin: 0.5em;
     padding-bottom: 0.8em;
   }
-  .card-pic.book{
-    border-radius: 0;
-    object-fit: contain;
-    object-position: 50% 50%;
-    overflow: hidden;
-  }
+  // .card-pic.book{
+  //   border-radius: 0;
+  //   object-fit: contain;
+  //   object-position: 50% 50%;
+  //   overflow: hidden;
+  // }
 
   .frame-book{
     transition: all 0.3s ease-in-out;

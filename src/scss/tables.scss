@@ -7,13 +7,8 @@ table{
   min-width: 350px;
   background-color: white;
   vertical-align: center;
-  // text-align: left;
 }
 
-// thead {
-  // align-items: center;
-  // text-align: left;
-// }
 tr th {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -78,33 +73,31 @@ tr.sub-total{
 }
 
 img.card-pic {
-  border-radius: 0;
-  object-fit: contain;
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
   object-position: 50% 50%;
   overflow: hidden;
 }
 
 .card-overview {
-
   overflow-y: auto; //responsive
-  background-color: none;
+  background-color: transparent;
   border-radius: 5px;
   align-items: start;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: all 0.3s;
-  // padding: 1em;
   min-width: 300px;
   height: auto;
   width: 100%;
 }
 
 ul, li, ul.card-bottom{
-  background: none;
-  // li{
-  //   background: none;
-  // }
+  background-color: transparent;
 }
 
 .spacer{
   margin: 1em 0;
 }
+
+@import "./academies.scss";

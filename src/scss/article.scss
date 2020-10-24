@@ -46,7 +46,6 @@
       img.author{
         overflow: hidden;
         border-radius: 45px 5px 45px 5px;
-        // -webkit-filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.3));
         filter: drop-shadow(6px 6px 6px rgba(0,0,0,0.2));
         width: 9em;
         height: 9em;
@@ -328,7 +327,6 @@ img.articleImageLeft.stafsudd{
 
 @import './students.scss';
 @import './grid.scss';
-@import './transfers.scss';
 @import './academies.scss';
 @import './department.scss';
 @import './tables.scss';
