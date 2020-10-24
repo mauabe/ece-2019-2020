@@ -32,7 +32,7 @@ export const articlesStudents = [
     articleCaption2: '',
     articleCaption3: '',
     articleAuthor: '',
-    textCopy: '<div class="grid-layout"> <div class="full"> <div class="half"> <div class="page-award">Andrew Wilhelm</div><div class="page-name">Outstanding Bachelor of Science Award</div><div class="page-img"><img src="/img/student2020-andrew-wilheim.jpg"></div><div class="page-caption"></div><div class="half"> <div class="page-award">Michelle Du</div><div class="page-name">Christina Huang Memorial Prize</div><div class="page-img"><img src="/img/student2020-michelle-du.jpg"></div><div class="page-caption"></div></div></div></div>',
+    textCopy: '  <div class="grid-layout"> <div class="twocolumns"> <div class="half"> <div class="page-award">Andrew Wilhelm</div><div class="page-name">Outstanding Bachelor of Science Award</div><div class="page-img"><img src="/img/student2020-andrew-wilheim.jpg"></div><div class="page-img "><img src="/img/pixel.png"></div></div><div class="half"> <div class="page-award">Michelle Du</div><div class="page-name">Christina Huang Memorial Prize</div><div class="page-img"><img src="/img/student2020-michelle-du.jpg"></div><div class="page-img "><img src="/img/pixel.png"></div></div></div></div>',
   },
   {
     articleId: 'awardsgrad',

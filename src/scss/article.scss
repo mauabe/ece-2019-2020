@@ -94,17 +94,13 @@
       font-weight: 400;
       font-size: 1em;
       padding: 2em;
-      // text-align: justify;
-      // text-justify: inter-word;
+
       text-indent: 2em;
       line-height: 1.8;
       margin-top: -40px;
       color: $black-80;
-      .text-body {
-        // text-align:justify;
-        // text-justify: inter-word;
-      }
-      .text-body span{
+
+      span.text-body{
         font-family: "Libre Caslon Text", serif;
         font-weight: 400i;
       }
@@ -117,9 +113,9 @@
       span.first-letter{
         font-family: 'Lemon', cursive, "Times", "Times New Roman";
         // initial-letter: 3 2;
-        font-size: 2em;
+        font-size: 2.5em;
         float: left;
-        margin: -0.2em .3em 0 0;
+        margin: -0.2em .4em 0 0;
         color: $SlateGray;
         text-indent: 0;
       }
@@ -150,6 +146,11 @@
       width: 100%;
       height: 280px;
       overflow: hidden;
+    }
+
+    img.articleImageLeft.none{
+      display: none;
+      max-height: 10px;
     }
   }
 }
@@ -226,6 +227,9 @@ img.articleImageRight.madni{
   object-fit: contain;
   max-width: 100%;
   justify-content: center;
+  object-position: -10% 50%;
+  height: 112%;
+  margin: 0 20px;
 }
 
 
@@ -325,8 +329,6 @@ img.articleImageLeft.stafsudd{
   }
 }
 
-@import './students.scss';
 @import './grid.scss';
 @import './academies.scss';
-@import './department.scss';
 @import './tables.scss';
