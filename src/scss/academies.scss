@@ -3,9 +3,9 @@
 
 .grid-cards{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   grid-gap: 1.1em;
+  // grid-template-columns: auto;
+  // grid-template-rows: auto;
   // padding: 1em;
 
   h3.page-title{
@@ -16,16 +16,7 @@
     text-indent: 0;
     background: transparent;
   }
-  img.full-width-img {
-    width: 100%;
-    max-height: 200px;
-    float: left;
-    object-fit: cover;
-    object-position: 50% 50%;
-    overflow: hidden;
-    margin-bottom: 0.5em;
-    // display: none
-  }
+
   .card-deck{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
@@ -35,85 +26,93 @@
     justify-items: start;
     // padding: 1em 0 0 0;
 
-    .dept{
+    .card {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 1.5em;
-      text-indent: 0;
+      // grid-template-columns: 1fr;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+      min-width: 270px;
+      min-height: 300px;
+      border-radius: 4px;
+      background: $grey-lighter--30;
+      align-items: start;
+      padding: 1em;
+
+      .card-dept{
+        min-height:550px;
+      }
+      .editors{
+        grid-column: 1;
+        min-height:300px;
+        width: 100%;
+      }
+      .designer {
+        grid-column: 2;
+        min-height:300px;
+        width: 100%;
+      }
+      .writers{
+        grid-area: writers;
+        width: 100%;
+        grid-column: 1 / span 2;
+        // min-height:300px;
+      }
     }
-    .partner{
+
+    .card-partner {
       display: grid;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+      transition: all 0.3s ease-in-out;
+      min-width: 300px;
+      min-height: 180px;
+      border-radius: 4px;
+      background-color: $grey-lighter--30;
+      align-items: center;
+      justify-items: center;
+      padding: 1em;
+    }
+
+    // .dept{
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // grid-template-rows: 1fr 1fr;
+      // grid-gap: 1.5em;
+      // text-indent: 0;
+    // }
+    .partner{
+      // display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
       grid-template-rows: auto ;
-      grid-gap: 1.5em;
-      text-indent: 0;
-      justify-items: center;
+       justify-items: center;
       align-items: center;
     }
 
-  }
-  .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s ease-in-out;
-    min-width: 270px;
-    min-height: 300px;
-    border-radius: 4px;
-    background: $grey-lighter--30;
-    align-items: start;
-    padding: 1em;
-
-    .card-dept{
-      min-height:550px;
+    .card-deck.dept.credits{
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      grid-template-areas:
+        'editors designer'
+        'writers writers';
+        width: 100%;
     }
   }
 
-  .card-partner {
+  .card-deck.overview{
     display: grid;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.3s ease-in-out;
-    min-width: 300px;
-    min-height: 180px;
-    border-radius: 4px;
-    background-color: $grey-lighter--30;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+    grid-template-rows: auto ;
+    grid-gap: 2em;
+    text-indent: 0;
     justify-items: center;
-    padding: 1em;
-    // grid-template-columns: 1fr;
+    align-items: start;
   }
 
-
-  .card-deck.dept.credits{
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    grid-template-areas:
-      'editors designer'
-      'writers writers';
-      width: 100%;
-  }
-  .card.editors{
-    grid-column: 1;
-    min-height:300px;
-    width: 100%;
-  }
-  .card.designer {
-    grid-column: 2;
-    min-height:300px;
-    width: 100%;
-  }
-  .card.writers{
-    grid-area: writers;
-    width: 100%;
-    grid-column: 1 / span 2;
-    // min-height:300px;
-  }
-  .twocolumns{
-    padding: 2em;
-    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
-    -moz-column-count: 2; /* Old Firefox */
-    column-count: 2;
+  img.card-pic {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
   }
 
   .card-partner.ibm{
@@ -139,7 +138,7 @@
     margin-bottom: 0;
   }
 
-  .acad-name{
+  .prof-name{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
@@ -188,21 +187,15 @@
       // }
   }
 
-  .acad-prof{
+  .prof-title{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     color: $DimGray;
     text-align: center;
     margin-top: 1em;
   }
-  .acad-prof2--old{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    color: $black-70;
-    text-align: center;
-  }
-  .acad-name.dept{
+
+  .prof-name.dept{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
@@ -210,7 +203,7 @@
     text-align: center;
     margin-bottom: 0.7em;
   }
-  .acad-name.credits{
+  .prof-name.credits{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
@@ -218,7 +211,7 @@
     text-align: center;
     margin-bottom: 0.7em;
   }
-  .acad-name-writers{
+  .prof-name-writers{
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 1em;
@@ -237,22 +230,15 @@
     text-decoration: none;
   }
 
-  .card-deck.dept{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 4px;
-    align-items: start;
-    padding: 1em;
-  }
   .card-partner{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     background: $borderblue2;
     min-width: 300px;
     // min-height: 300px;
     height: auto;
-  }
-  .card-partner:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    &:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    }
   }
   .acad-section{
     font-family: 'Lemon', cursive;
@@ -260,21 +246,14 @@
     color: $menublue;
     text-align: center;
   }
-  span.acad-prof-cred2{
+  span.prof-title{
     font-family: 'Lemon', cursive;
     font-size: 1.2em;
     color: $menublue;
     text-align: start;
   }
-  span.acad-prof-cred3 {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 700;
-    font-size: 1.1m;
-    color: $black_80;
-    // text-align: start;
-    margin-bottom: 0.4em;
-  }
-  .acad-prof.dept{
+
+  .prof-prof-title.dept{
     font-size: 2em;
     margin: 0.5em;
     padding-bottom: 0.8em;
