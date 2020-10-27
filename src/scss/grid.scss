@@ -107,10 +107,10 @@
 
     img{
       // width: 450px;
-      height: 250px;
+      height: 210px;
       object-position: 50% 50%;
       object-fit: contain;
-      margin: 1em;
+      margin: 0 1em;
     }
   }
 
@@ -118,6 +118,7 @@
     height: 1em;
     margin: 1em 0;
   }
+
 
   //page speciffic css
   .hkn{
@@ -160,21 +161,34 @@
 
   .researchcenters {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 3fr));
-    grid-gap: 2.2em;
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 3fr));
+    grid-template-rows: auto ;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
 
-    .page-award.ctr{
-      max-width: 250px;
+    .research-center{
+      // overflow: hidden;
+      // max-width: 250px;
+      // width: 350px;
+      // height: 350px;
       font-size: 1.1em;
-      margin-bottom: 0.5em;
+      margin-bottom: 1.5em;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      text-indent: 0;
+      text-align: left;
 
-      img.center{
-        background: white;
+      img.center-logo{
+        background-color: transparent;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
         transition: all 0.3s ease-in-out;
-        width: 250px;
-        height: 250px;
-        border-radius: 4px;
+        width: 350px;
+        height: 350px;
+        border-radius: 25px 5px 25px 5px;
         object-fit: cover;
         object-position: 50% 50%;
         margin-bottom: 0.5em;
@@ -194,8 +208,8 @@
       max-height: 1px;
     }
 
-    .page-award.ctr:hover{
-      img.center{
+    .research-center:hover{
+      img.center-logo{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
       }
     }
