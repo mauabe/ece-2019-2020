@@ -15,6 +15,6 @@ module.exports = {
   appBuild: resolveApp('build'), // Prod built files end up here
   appConfig: resolveApp('config'), // App config files
   appHtml: resolveApp('src/index.html'),
-  appIndexJs: resolveApp('src/index.jsx'), // Main entry point
+  appIndexJs: resolveApp('src/index.js'), // Main entry point
   appSrc: resolveApp('src'), // App source
 };
