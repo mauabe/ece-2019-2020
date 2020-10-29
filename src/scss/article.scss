@@ -184,25 +184,35 @@
 .picture-area.none{
   display: none;
 }
-
 img.none {
   display: none;
 }
-
-span.link a{
-  color: $menublue;
-  transition: all .3s ease-in-out;
-
-  span.link a:hover{
-    color: $beige-lighter;
-  }
-}
-
 .none {
   display: none;
 }
 
-//additional CSS for spcific pages:
+// .link a{
+//   color: $jaguar;
+//   transition: all .3s ease-in-out;
+
+//   &:hover{
+//     color: $beige-lighter;
+//   }
+// }
+
+.link, a.link{
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-weight: 400i;
+  font-size: 0.8em;
+  font-style: italic;
+  color: $jaguar;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    color: $beige-lighter;
+  }
+}
+
 .full-width {
 	left: 50%;
 	margin-left: -50vw;
@@ -213,15 +223,8 @@ span.link a{
 	width: 100vw;
 }
 
-.row2 .jarrahi{
-  display: grid;
-  grid-column-end: span 2;
 
-  img.articleImageLeft.jarrahi  {
-    left: 0;
-    top: 0;
-  }
-}
+//additional CSS for spcific pages:
 
 img.articleImageRight.madni{
   object-fit: contain;
@@ -231,8 +234,6 @@ img.articleImageRight.madni{
   height: 112%;
   margin: 0 20px;
 }
-
-
 .pottie .row1{
   display: grid;
   grid-template-columns: 1fr;
@@ -255,19 +256,19 @@ img.articleImageLeft.pottie{
 img.articleImageLeft.stafsudd{
   object-fit: contain;
   object-position: -50% 50%;
-  // height: 112%;
   max-width: 160%;
   justify-content: center;
   margin: 0 20px;
 }
-
-
 .darpa .row2{
   display: grid;
   grid-template-columns: 1fr;
   margin-right: -25%;
   margin-left: 25%;
 }
+
+
+
 
 @media only screen and (max-width: 900px) {
   .article {
