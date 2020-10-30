@@ -4,7 +4,7 @@ export const topMenu = [
   ['students', 'Students & Teaching'],
   ['faculty', 'ECE Faculty'],
   ['overview', 'Department Overview'],
-  // ['alumni', 'Alumni & Partnerships']
+  ['alumni', 'Alumni & Partnerships']
 ];
 
 // console.log('topMenu:', topMenu)

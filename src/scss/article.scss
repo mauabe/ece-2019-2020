@@ -191,19 +191,10 @@ img.none {
   display: none;
 }
 
-// .link a{
-//   color: $jaguar;
-//   transition: all .3s ease-in-out;
-
-//   &:hover{
-//     color: $beige-lighter;
-//   }
-// }
-
-.link, a.link{
+.link, span.link, a.link{
   font-family: 'Libre Caslon Text', sans-serif;
   font-weight: 400i;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-style: italic;
   color: $jaguar;
   transition: all .3s ease-in-out;
@@ -330,6 +321,6 @@ img.articleImageLeft.stafsudd{
   }
 }
 
-@import './grid.scss';
-@import './academies.scss';
+@import './grid-layout.scss';
+@import './grid-cards.scss';
 @import './tables.scss';
