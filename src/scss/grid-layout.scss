@@ -161,7 +161,7 @@
   .researchcenters {
     display: grid;
     grid-gap: 3em;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 3fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 4fr));
     grid-template-rows: auto ;
     width: 100%;
     align-items: start;
@@ -203,7 +203,7 @@
         font-family: 'Oswald', sans-serif;
         font-weight: 300;
         font-size: 0.9em;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         text-indent: 0;
         text-align: left;
       }
@@ -232,7 +232,7 @@
     margin-bottom: 2em;
   }
 
-  div.twocolumns{
+  .twocolumns{
     display: grid;
     grid-gap: 3em;
     grid-template-columns: 1fr 1fr;
@@ -240,23 +240,14 @@
     align-content: start;
     justify-content: space-between;
     margin-bottom: 2em;
-    // width: 100%;
-    // grid-template-rows: 1fr 1fr;
-    // -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
-    // -moz-column-count: 2; /* Old Firefox */
-    // column-count: 2;
-
     .half{
       flex: 50%;
       align-content: start;
       // width: 50%;
       // grid-row: 1fr 1fr minmax(125px, 2fr) 1fr;
-      // grid-column: 1;
-      // grid-template-rows: 1fr 1fr auto 1fr;
     }
     .spacer{
         height: 1em;
-        // margin: 1em 0;
     }
   }
 }
@@ -282,6 +273,3 @@
     height: 400px;
   }
 }
-
-
-// @import './academies.scss';
