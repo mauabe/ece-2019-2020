@@ -39,7 +39,7 @@ export const articlesNews = [
     professorFirstName: 'Nader',
     professorLastName: 'Nader',
     professorName: 'Nader Sehatbakhsh',
-    articleAbrevTitle:'Starts Fresh',
+    articleAbrevTitle:'Security and Privacy',
     articleDescription: 'New Faculty Nader Sehatbakhsh',
     articleHeadline:'Security and Privacy Concerns in the Next Decade',
     articleSubhead: 'Side-Channels can leak secrets!',

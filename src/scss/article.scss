@@ -166,20 +166,20 @@
   padding: 0em ;
   display: none;
 }
-.credits{
-  margin: 1em;
+// .credits{
+//   margin: 1em;
 
-  .image-credits{
-    font-family: 'Libre Caslon Text', sans-serif;
-    font-weight: 300;
-    font-size: .7em;
-  }
-  .author-credits{
-    font-family: 'Libre Caslon Text', sans-serif;
-    font-weight: 300;
-    font-size: .7em;
-  }
-}
+//   .image-credits{
+//     font-family: 'Libre Caslon Text', sans-serif;
+//     font-weight: 300;
+//     font-size: .7em;
+//   }
+//   .author-credits{
+//     font-family: 'Libre Caslon Text', sans-serif;
+//     font-weight: 300;
+//     font-size: .7em;
+//   }
+// }
 
 .picture-area.none{
   display: none;
@@ -214,52 +214,34 @@ img.none {
 	width: 100vw;
 }
 
-
 //additional CSS for spcific pages:
 
-img.articleImageRight.madni{
-  object-fit: contain;
-  max-width: 100%;
-  justify-content: center;
-  object-position: -10% 50%;
-  height: 112%;
-  margin: 0 20px;
-}
-.pottie .row1{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-right: -25%;
-  margin-left: 25%;
-}
-img.articleImageLeft.pottie{
-  object-fit: contain;
-  object-position: -50% 50%;
-  max-width: 160%;
-  justify-content: center;
-  margin: 0 20px;
-}
-.stafsudd .row1{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-right: -25%;
-  margin-left: 25%;
-}
-img.articleImageLeft.stafsudd{
-  object-fit: contain;
-  object-position: -50% 50%;
-  max-width: 160%;
-  justify-content: center;
-  margin: 0 20px;
-}
-.darpa .row2{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-right: -25%;
-  margin-left: 25%;
+.text-body.administration, .text-body.annualreport{
+  width: 100%;
 }
 
-
-
+.twocolumns{
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  align-content: start;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  .half{
+    flex: 50%;
+    align-content: start;
+  }
+  .spacer{
+      height: 1em;
+  }
+}
+.grid-cards.twocolumns{
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+}
 
 @media only screen and (max-width: 900px) {
   .article {
@@ -299,7 +281,11 @@ img.articleImageLeft.stafsudd{
     font-size: 2em;
     margin-bottom: 2em;
   }
-
+  .twocolumns {
+    display: grid;
+    grid-column: span 1;
+    grid-auto-flow: column;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -312,6 +298,7 @@ img.articleImageLeft.stafsudd{
       margin: 1em auto 1em auto;
     }
   }
+
 }
 
 @media only screen and (max-width: 650px) {
