@@ -50,7 +50,7 @@ export const slides = [
     link: "highlight1"
   },
   {
-    title: "Dean Jayathi Murthy inducted into ",
+    title: "Dean Jayathi Murthy Elected to ",
     subtitle: "National Academy of Engineering",
     description: 'For the development of unstructured solution-adaptive finite volume methods for heat, mass and momentum transport.',
     image: "/img/dean-murthy-faculty.jpg",

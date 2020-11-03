@@ -243,7 +243,6 @@
     margin: 1em auto;
     border: 2px solid $black-70;
     align-items: center;
-    max-width: 150px;
     width: 150px;
     height: 190px;
     overflow: hidden;
@@ -254,47 +253,39 @@
   .frame-prof-book{
     position: relative;
     display: none;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 5.3s ease-in-out;
     border: 2px solid $black-60;
     border-radius: 25px 5px;
-    object-fit: cover;
-    object-position: 50% 50%;
+    // object-fit: cover;
+    // object-position: 50% 50%;
     overflow: hidden;
     z-index: 100;
     top: 35px;
     right: 10px;
     width: 150px;
     height: 150px;
-
+    transition: all 3.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   }
 
   .card.book{
     object-position: 50% 50%;
     transition: all 0.3s ease;
   }
-  .card.book:hover{
-    position: relative;
-    // transition: all 0.3s ease;
-    .frame-book{
-      border: 2px solid $menublue;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-      height: 190px;
-      width: 150px;
-      position: relative;
-    }
-    .frame-prof-book{
-      position: absolute;
-      display: block;
-      opacity: 1;
-      transition: all 0.3s ease-in-out;
-      img.card-prof-book{
-        object-fit: contain;
-        object-position: 50% 50%;
-        transition: all 0.3s ease;
-      }
-    }
-  }
+
+  // .card.book:hover{
+  //   position: relative;
+  //   // position: absolute;
+  //   .frame-prof-book{
+  //     position: absolute;
+  //     display: block;
+  //     overflow: hidden;
+  //     img.card-prof-book{
+  //       object-fit: cover;
+  //       object-position: 50% 50%;
+  //     }
+  //   }
+  // }
 
   div.card-name{
     font-family: 'Lemon', sans-serif;
