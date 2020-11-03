@@ -92,7 +92,7 @@ export const articlesAlumni = [
     articleImageAltText6: '',
     articleImageMain: '/img/Mt-Coot.jpg',
     articleImageAltTextMain: 'mt coot botanical garden ceiling',
-    articleImageProf: '/img/Subramanian_Iyer.jpg',
+    articleImageProf: '/img/Subramanian_Iyer-industry.jpg',
     articleImageAltTextProf: 'Professor Subramanian Iyer',
     articleImageCred: '',
     articleAuthor: '',
