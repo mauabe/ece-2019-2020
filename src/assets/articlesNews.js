@@ -16,7 +16,7 @@ export const articlesNews = [
     articleImage4:'',
     articleImage5:'',
     articleImage6:'',
-    articleImageAltText1: 'Yang',
+    articleImageAltText1: 'C.-K. Ken Yang',
     articleImageAltText2: '',
     articleImageAltText3: '',
     articleImageAltText4: '',
