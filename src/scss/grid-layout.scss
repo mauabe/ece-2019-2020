@@ -113,7 +113,6 @@
       margin: 0 1em;
     }
   }
-
   .spacer{
     height: 1em;
     margin: 1em 0;
@@ -123,7 +122,12 @@
   .hkn{
     margin-bottom: 1.5em;
   }
-
+  .piechart{
+    // display: grid;
+    // grid-template-columns: 1fr;
+    width: 50%;
+    // height: auto;
+  }
   img.full-width-img {
     width: 100%;
     max-height: 200px;
