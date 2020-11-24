@@ -93,16 +93,16 @@ export const articlesOverview = [
     articleImageAltText4: '',
     articleImageAltText5: '',
     articleImageAltText6: '',
-    articleImageMain: '/img/tunnel-light.jpg',
-    articleImageAltTextMain: 'lit corridor',
-    articleImageProf: '/img/razavi_behzad-book.jpg',
-    articleImageAltTextProf: 'Professor Behzad Razavi',
+    articleImageMain: '/img/sillouette_blackboard.jpg',
+    articleImageAltTextMain: 'Sillouette of womand writing math equations on light whiteboard',
+    articleImageProf: '/img/notebook-laptop.jpg',
+    articleImageAltTextProf: 'note taking on notebook with a laptop open on  desk',
     articleImageCred: '',
     articleAuthor: '',
     articleCaption1: '',
     articleCaption2: '',
     articleCaption3: '',
-    textCopy: ' <div class="grid-cards"> <h3 class="page-title">Book by ECE Faculty published this year</h3> <div class="card-deck"> <div class="card book"> <div class="frame-book"><img class="card-pic book" src="/img/Razavi_DesignOfCMOS.jpg" alt=" Design Of CMOS Razavi Book"></div><div class="frame-prof-book"><img class="card-prof-book" src="/img/razavi_behzad-book.jpg" alt=" Behzad Razavi Design of CMOS Phase-Locked Loops"></div><div class="prof-title">Professor</div><div class="prof-name"> Behzad Razavi</div><div class="prof-title">Design of CMOS Phase-Locked Loops: From Circuit Level to Architecture Level </div></div></div></div>  '
+    textCopy: ' <div class="grid-layout">  <h3 class="page-title">Funding by Sponsor</h3><div class=""> <img class="piechart" src="/img/Funding.png" alt="pie chart with researchg funding sources">  </div>  </div>  '
   },
   {
     articleId: 'facultystaff',
