@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 // import { CSSTransition } from 'react-transition-group';
-// import { Container, Navbar, Nav } from 'bulma'
 // import Home from './pages/home'
 // import About from './pages/about'
 // import Contact from './pages/contact'

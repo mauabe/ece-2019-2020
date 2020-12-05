@@ -1,11 +1,12 @@
 <div class="twocolumns">
-    <div class="">
-        <h3 class="page-title">Funding by Sponsors</h3>
-        <img class="piechart" src="/img/Funding.png" alt="pie chart with research funding sources">
+    <div class="card-deck overview">
+        <h3 class="page-title">Funding by Sponsors
+            <img class="piechart" src="/img/Funding.png" alt="pie chart with research funding sources">
+        </h3>
     </div>
     <div>
         <h3 class="page-title">Graduate Student Fellowships</h3>
-        <div class=" card-deck overview">
+        <div class="card-deck overview">
             <div class="card-overview">
                 <table id="fellowships">
                     <thead>
@@ -196,7 +197,7 @@
                 </tfoot>
             </table>
         </div>   <!-- card-overview end -->
-    </div>
+    </div> <!-- card-deck overview end -->
 
     <div class="card-deck overview">
         <div class="card-overview">
@@ -238,12 +239,7 @@
             </table>
         </div>  <!-- card-overview end -->
     </div>   <!-- card-deck overview end -->
-
-    <!-- <div class="page-img spacer">
-        <img src="/img/pixel.png"></img>
-    </div> -->
-
-    <!-- FACULTY AND STAFF END-->
+</div> <!-- FACULTY AND STAFF END-->
 
 
 
@@ -445,11 +441,16 @@ https://nanolab.ucla.edu/ -->
 
 
 
+
+
+
+
 <!-- OVERVIEW STUDENTS -->
 
-<div class="grid-cards">
+
+<div class="grid-cards enrollment">
     <h3 class="page-title">Student Enrollment</h3>
-    <div class="card-deck overview">
+    <div class="card-deck">
         <div class="card-overview">
             <table id="fall-undergrad">
                 <thead>
@@ -488,52 +489,59 @@ https://nanolab.ucla.edu/ -->
                 </tfoot>
             </table>
         </div>
-        <div class="card-overview">
-            <table id="fall-grad">
-                <thead>
-                    <tr class="t-head-row">
-                        <th>Fall 2019 Graduate Students</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Students Enrolled</td>
-                        <td>482</td>
-                    </tr>
-                    <tr>
-                        <td>Applicants</td>
-                        <td>1864</td>
-                    </tr>
-                    <tr>
-                        <td>Admitted</td>
-                        <td>522</td>
-                    </tr>
-                    <tr>
-                        <td>New Students Enrolled</td>
-                        <td>180</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>Average Incoming GPA (weighted)</td>
-                        <td>4.521</td>
-                    </tr>
-                    <tr>
-                        <td>Average Incoming GPA (unweighted)</td>
-                        <td>3.951</td>
-                    </tr> -->
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div>
+            <div class="card-overview">
+                <table id="fall-grad">
+                    <thead>
+                        <tr class="t-head-row">
+                            <th>Fall 2019 Graduate Students</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Students Enrolled</td>
+                            <td>482</td>
+                        </tr>
+                        <tr>
+                            <td>Applicants</td>
+                            <td>1864</td>
+                        </tr>
+                        <tr>
+                            <td>Admitted</td>
+                            <td>522</td>
+                        </tr>
+                        <tr>
+                            <td>New Students Enrolled</td>
+                            <td>180</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Average Incoming GPA (weighted)</td>
+                            <td>4.521</td>
+                        </tr>
+                        <tr>
+                            <td>Average Incoming GPA (unweighted)</td>
+                            <td>3.951</td>
+                        </tr> -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
+
     </div>
 </div>
 <div class="page-img spacer"><img src="/img/pixel.png"></div>
-<div class="grid-cards">
+
+
+
+
+<div class="grid-cards degreesconferred">
     <h3 class="page-title">Degrees Conferred in 2019-2020</h3>
     <div class="card-deck overview">
         <div class="card-overview">
@@ -653,9 +661,14 @@ https://nanolab.ucla.edu/ -->
 </div>
 </div>
 <div class="page-img spacer"><img src="/img/pixel.png"></div>
-<div class="grid-cards">
+
+
+
+
+<div class="grid-cards applicants">
     <h3 class="page-title">Graduate Applicants and Admitted</h3>
     <div class="card-deck overview">
+        <div>
         <div class="card-overview">
             <table id="faculty">
                 <thead>
@@ -706,6 +719,7 @@ https://nanolab.ucla.edu/ -->
                 </tfoot>
             </table>
         </div>
+    </div>
         <div class="card-overview">
             <table id="faculty">
                 <thead>

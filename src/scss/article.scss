@@ -52,7 +52,7 @@
         object-fit: cover;
         z-index: 10;
         margin-right: 4em;
-        border: 2px solid $orange1;
+        border: 2px solid $orange;
         transition: all 0.3s ease-in-out;
         &:hover{
           // object-position: 1% 1%;
@@ -77,7 +77,7 @@
           font-weight: 700;
           color: $black-60;
           font-size: 2.8em;
-          color: $orange2;
+          color: $orange;
         }
         .subhead{
           font-family: 'Oswald', sans-serif;
@@ -245,11 +245,9 @@ img.none {
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
 }
-.grid-cards.piechart{
-  // display: grid;
-  // grid-template-columns: 1fr;
-  width: 50%;
-  // height: auto;
+.piechart{
+  max-width: 110%;
+  margin: 1em 0 1em 0;
 }
 
 @media only screen and (max-width: 900px) {
