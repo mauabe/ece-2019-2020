@@ -68,7 +68,7 @@ tr.sub-total{
 }
 
 
-.card-overview {
+.table-overview {
   overflow-y: auto; //responsive
   background-color: transparent;
   border-radius: 5px;
@@ -77,7 +77,7 @@ tr.sub-total{
   transition: all 0.3s;
   min-width: 350px;
   height: auto;
-  // width: 100%;
+  width: 100%;
 }
 
 ul, li, ul.card-bottom{
